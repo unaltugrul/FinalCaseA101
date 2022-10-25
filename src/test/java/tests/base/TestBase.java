@@ -3,6 +3,7 @@ package tests.base;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -50,6 +51,8 @@ public class TestBase {
         }else {
             logger.error("FAILED - User is not on home page.");
         }
+        //2-user accepts cookies
+        driver.findElement(By.xpath("//div[@class='ot-sdk-row']//button[@id='onetrust-accept-btn-handler']")).click();
 
     }
 
