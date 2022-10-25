@@ -37,18 +37,24 @@ public class TestBase {
         options.addArguments("--disable-blink-features=AutomationControlled");
         options.addArguments("--disable-notifications");
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         //User navigate to Web Page
         logger.info("User is landing to home page...");
         driver.get("https://www.hepsiburada.com/");
-        
+        Assert.assertTrue(driver.getTitle().equals("Türkiye'nin En Büyük Online Alışveriş Sitesi Hepsiburada.com"));
+        if (driver.getTitle().equals("Türkiye'nin En Büyük Online Alışveriş Sitesi Hepsiburada.com")){
+            logger.info("User is on the home page...");
+        }else {
+            logger.error("Fail");
+        }
+
     }
 
     @AfterMethod
     public void tearDown() {
-        driver.quit();
+        //driver.quit();
         logger.info(new Object(){}.getClass().getEnclosingMethod().getName() + ": end of this case");
     }
 
