@@ -29,6 +29,7 @@ public class TestBase {
         logger.info("Welcome to my framework Tests is starting!...");
     }
 
+    //Background//Precondition
     @BeforeMethod
     public void setupMethod() {
         logger.info(new Object(){}.getClass().getEnclosingMethod().getName() + ": new case is starting");
@@ -40,14 +41,14 @@ public class TestBase {
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        //User navigate to Web Page
+        //1-User navigates to Web Page
         logger.info("User is landing to home page...");
         driver.get("https://www.hepsiburada.com/");
         Assert.assertTrue(driver.getTitle().equals("Türkiye'nin En Büyük Online Alışveriş Sitesi Hepsiburada.com"));
         if (driver.getTitle().equals("Türkiye'nin En Büyük Online Alışveriş Sitesi Hepsiburada.com")){
-            logger.info("User is on the home page...");
+            logger.info("PASSED - User is on the home page...");
         }else {
-            logger.error("Fail");
+            logger.error("FAILED - User is not on home page.");
         }
 
     }
