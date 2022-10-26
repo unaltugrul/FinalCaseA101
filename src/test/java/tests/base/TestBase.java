@@ -46,7 +46,7 @@ public class TestBase {
     @BeforeMethod
     public void setupMethod() {
         logger.fatal(new Object() {
-        }.getClass().getEnclosingMethod().getName() + ": new case is starting");
+        }.getClass().getEnclosingMethod().getName() + ": precondition is starting");
         //1-User navigates to Web Page
         logger.info("User is landing to home page...");
         Driver.getDriver().get("https://www.hepsiburada.com/");
@@ -58,15 +58,18 @@ public class TestBase {
         } else {
             logger.error("FAILED - User is not on home page.");
         }
+        logger.info("precondition is ending...");
         //2-user accepts cookies
         homePage.cookiesAcceptButton.click();
+
+        logger.info("Test execution has started...");
 
     }
 
     //teardown method for
     @AfterMethod
     public void tearDown() {
-        Driver.getDriver().close();
+        //Driver.getDriver().close();
         logger.info(new Object() {
         }.getClass().getEnclosingMethod().getName() + ": end of this case, driver is closing...");
     }
