@@ -12,6 +12,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import pages.HomePage;
 import utilities.Driver;
 
 import java.time.Duration;
@@ -20,7 +21,6 @@ import java.time.Duration;
 public class TestBase {
 
     //public driver field to be able to inherit
-    public WebDriver driver = Driver.getDriver();
 
     //I created logger attribute object for logging my project
     Logger logger = Logger.getLogger(TestBase.class);
@@ -29,6 +29,9 @@ public class TestBase {
     public TestBase() {
         DOMConfigurator.configure("log4j.xml");
     }
+
+    //I create homepage object to be able to call elements from this class
+    HomePage homePage = new HomePage();
 
     //I wanted sending to console a message before starting
     @BeforeClass
@@ -42,26 +45,28 @@ public class TestBase {
     //Background//Precondition
     @BeforeMethod
     public void setupMethod() {
-        logger.info(new Object() {
+        logger.fatal(new Object() {
         }.getClass().getEnclosingMethod().getName() + ": new case is starting");
         //1-User navigates to Web Page
         logger.info("User is landing to home page...");
-        driver.get("https://www.hepsiburada.com/");
-        Assert.assertTrue(driver.getTitle().equals("Türkiye'nin En Büyük Online Alışveriş Sitesi Hepsiburada.com"));
-        if (driver.getTitle().equals("Türkiye'nin En Büyük Online Alışveriş Sitesi Hepsiburada.com")) {
+        Driver.getDriver().get("https://www.hepsiburada.com/");
+        String expectedResult = "Türkiye'nin En Büyük Online Alışveriş Sitesi Hepsiburada.com";
+        String actualResult = Driver.getDriver().getTitle();
+        Assert.assertEquals(expectedResult,actualResult);
+        if (Driver.getDriver().getTitle().equals("Türkiye'nin En Büyük Online Alışveriş Sitesi Hepsiburada.com")) {
             logger.info("PASSED - User is on the home page...");
         } else {
             logger.error("FAILED - User is not on home page.");
         }
         //2-user accepts cookies
-        driver.findElement(By.xpath("//div[@class='ot-sdk-row']//button[@id='onetrust-accept-btn-handler']")).click();
+        homePage.cookiesAcceptButton.click();
 
     }
 
     //teardown method for
     @AfterMethod
     public void tearDown() {
-        //driver.quit();
+        Driver.getDriver().close();
         logger.info(new Object() {
         }.getClass().getEnclosingMethod().getName() + ": end of this case, driver is closing...");
     }
