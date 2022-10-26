@@ -31,7 +31,7 @@ public class TestBase {
     }
 
     //I create homepage object to be able to call elements from this class
-    HomePage homePage = new HomePage();
+    public HomePage homePage = new HomePage();
 
     //I wanted sending to console a message before starting
     @BeforeClass
