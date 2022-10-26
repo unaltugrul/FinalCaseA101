@@ -22,57 +22,57 @@ public class TestCase1 extends TestBase {
         DOMConfigurator.configure("log4j.xml");
     }
 
+    //I used actions class to implement hover action for now
+    Actions actions = new Actions(Driver.getDriver());
 
     //Feature : add product to cart by logging in
     @Test
-    public void testStep1(){
+    public void testSteps(){
 
         //to clarify method and class names I use detailed log
         logger.info(new Object() {
-        }.getClass().getEnclosingMethod().getName() + ": -User hovers over \"Giris Yap veya uye ol\" button...");
+        }.getClass().getEnclosingMethod().getName() + ": Test Execution is working Feature - User adds product to cart by logging in...");
+
+        logger.info("Step 1-User hovers over \"Giris Yap veya uye ol\" button");
         //1-User hovers over "Giris Yap veya uye ol" button
-        Actions actions = new Actions(Driver.getDriver());
-        actions.moveToElement(Driver.getDriver().findElement(By.id("myAccount"))).perform();
-
-    }
-
-    @Test
-    public void testStep2(){
-
-
-
-        //•	Kullanıcı, burada satın almak istediği ürün için arama yapacaktır.
-        //•	Kullanıcı, Arama sonucunda ekrana gelen ürün listesinden (veya tek bir sonuç da dönmüş olabilir) ürün seçer.
-        //•	Seçilen ürün için 2 tane farklı satıcıdan ürün seçilip sepete eklenir.
-        //•	Seçilen ürünün doğru olarak eklendiği ‘Sepetim’ sayfasında doğrulanmalıdır.
-
-
+        actions.moveToElement(homePage.girisYapDropdown).perform();
 
         //2-User clicks to "Giris Yap" option from opened dropdown menu
-        logger.info("2-User clicks to \"Giris Yap\" option from opened dropdown menu");
-        Driver.getDriver().findElement(By.id("login")).click();
-        WebElement userInputBox = Driver.getDriver().findElement(By.xpath("//input[@name='username']"));
+        logger.info("Step 2-User clicks to \"Giris Yap\" option from opened dropdown menu");
+        homePage.girisYapOption.click();
 
         //3-User enters email address to input box
-        logger.info("3-User enters email address to input box");
-        userInputBox.sendKeys("swtestacademy@mailinator.com" + Keys.ENTER);
+        logger.info("Step 3-User enters email address to input box");
+        loginPage.emailInputBox.sendKeys("swtestacademy@mailinator.com" + Keys.ENTER);
 
         //4-User enters password to input box
-        logger.info("4-User enters password to input box");
-        WebElement passwordInputBox = Driver.getDriver().findElement(By.name("password"));
-        passwordInputBox.sendKeys("Qwerty_123" + Keys.ENTER);
+        logger.info("Step 4-User enters password to input box");
+        loginPage.passwordInputBox.sendKeys("Qwerty_123" + Keys.ENTER);
+
+        //5- Verify that user is able to log in successfully
+        logger.info("Verifying... that user is able to log in successfully");
         String exceptedUserName = "swtestacademy swtestacademy";
         String actualUserName = Driver.getDriver().findElement(By.xpath("//a[@title='Hesabım']//span[2]")).getText();
+        //I use Assert class from testng library to verify
         Assert.assertEquals(exceptedUserName,actualUserName);
+        //this condition to commit this verification to log file
         if (exceptedUserName.equals(actualUserName)){
             logger.info("PASSED - User logged in successfully");
         }else {
             logger.error("FAILED - User couldn't log in successfully");
         }
 
-        //5-User enters product name to search box
+        //6-User enters product name to search box
 
 
+    }
+
+    @Test
+    public void testCase2(){
+
+        //•	Kullanıcı, Arama sonucunda ekrana gelen ürün listesinden (veya tek bir sonuç da dönmüş olabilir) ürün seçer.
+        //•	Seçilen ürün için 2 tane farklı satıcıdan ürün seçilip sepete eklenir.
+        //•	Seçilen ürünün doğru olarak eklendiği ‘Sepetim’ sayfasında doğrulanmalıdır.
 
 
     }
