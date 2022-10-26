@@ -19,7 +19,7 @@ public abstract class BasePage {
 
     //"giris yap" button from dropdown menu
     @FindBy(id="login")
-    public WebElement loginButton;
+    public WebElement girisYapOption;
 
 
 
