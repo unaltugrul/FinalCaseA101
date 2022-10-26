@@ -59,11 +59,12 @@ public class TestBase {
 
     }
 
+    //teardown method for
     @AfterMethod
     public void tearDown() {
         //driver.quit();
         logger.info(new Object() {
-        }.getClass().getEnclosingMethod().getName() + ": end of this case");
+        }.getClass().getEnclosingMethod().getName() + ": end of this case, driver is closing...");
     }
 
 
