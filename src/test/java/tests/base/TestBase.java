@@ -36,7 +36,6 @@ public class TestBase {
         logger.info("Welcome to my framework Tests is starting!...");
     }
 
-
     //I have 2 test case and both test steps start with same scenario because of that I used these steps as precondition
     //1- Users add product to chart by logging in
     //2- Users add product to chart without by logging in
