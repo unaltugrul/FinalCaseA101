@@ -5,15 +5,23 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class BasePage {
+//I used abstract because I don't want to create object from this class
+public abstract class BasePage {
     //I am going to add all common elements on the web page
     //constructor to initialize with PageFactory Class
     public BasePage(){
-       PageFactory.initElements(Driver.getDriver(),this);
+        PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy()
-    public WebElement
+    //"hesabim" or "giris yap" button from main modul for dropdown menu
+    @FindBy(id = "myAccount")
+    public WebElement girisYapDropdown;
+
+    //"giris yap" button from dropdown menu
+    @FindBy(id="login")
+    public WebElement loginButton;
+
+
 
 
 
