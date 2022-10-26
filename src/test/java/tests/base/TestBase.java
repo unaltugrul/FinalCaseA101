@@ -13,6 +13,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import pages.HomePage;
+import pages.LoginPage;
 import utilities.Driver;
 
 import java.time.Duration;
@@ -32,6 +33,8 @@ public class TestBase {
 
     //I create homepage object to be able to call elements from this class
     public HomePage homePage = new HomePage();
+
+    public LoginPage loginPage = new LoginPage();
 
     //I wanted sending to console a message before starting
     @BeforeClass
