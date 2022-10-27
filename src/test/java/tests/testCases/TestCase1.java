@@ -28,12 +28,6 @@ public class TestCase1 extends TestBase {
         DOMConfigurator.configure("log4j.xml");
     }
 
-    //I used actions class to implement hover action for now
-    Actions actions = new Actions(Driver.getDriver());
-
-    //I created wait object if I face with any delaying
-    WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
-
     //Feature : add product to cart by logging in
     @Test
     public void testCase_1Steps() throws InterruptedException {
