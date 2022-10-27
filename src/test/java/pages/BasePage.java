@@ -21,8 +21,8 @@ public abstract class BasePage {
     @FindBy(id="login")
     public WebElement girisYapOption;
 
-
-
-
+    //search input box
+    @FindBy(xpath = "//div[@role='combobox']/input[1]")
+    public WebElement searchBox;
 
 }
