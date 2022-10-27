@@ -12,10 +12,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import pages.HomePage;
-import pages.LoginPage;
-import pages.ProductListPage;
-import pages.ProductPage;
+import pages.*;
 import utilities.Driver;
 
 import java.time.Duration;
@@ -41,6 +38,8 @@ public class TestBase {
     public ProductListPage productListPage = new ProductListPage();
 
     public ProductPage productPage = new ProductPage();
+
+    public CartPage cartPage = new CartPage();
 
     //I wanted sending to console a message before starting
     @BeforeClass
