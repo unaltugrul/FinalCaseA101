@@ -36,7 +36,7 @@ public class TestCase1 extends TestBase {
 
     //Feature : add product to cart by logging in
     @Test
-    public void testSteps() throws InterruptedException {
+    public void testCase_1Steps() throws InterruptedException {
 
         //to clarify method and class names I use detailed log
         logger.info("Test Execution is working... Feature - User adds product to cart by logging in...");
@@ -131,11 +131,7 @@ public class TestCase1 extends TestBase {
 
     }
 
-/*    @Test
-    public void testCase2() {
 
-
-    }*/
 
 
 }
