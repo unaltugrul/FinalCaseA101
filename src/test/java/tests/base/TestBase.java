@@ -78,8 +78,14 @@ public class TestBase {
     @AfterMethod
     public void tearDown() {
         //Driver.getDriver().close();
-        logger.info(new Object() {
-        }.getClass().getEnclosingMethod().getName() + ": end of this case, driver is closing...");
+        logger.info("driver is closing...");
+    }
+
+    @AfterClass
+    public void message2() {
+        logger.info("End of the Test Case! Hopefully we will see each other again...");
+        Driver.getDriver().quit();
+
     }
 
 
