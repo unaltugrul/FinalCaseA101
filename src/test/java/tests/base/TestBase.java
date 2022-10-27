@@ -14,6 +14,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import pages.HomePage;
 import pages.LoginPage;
+import pages.ProductListPage;
+import pages.ProductPage;
 import utilities.Driver;
 
 import java.time.Duration;
@@ -31,10 +33,14 @@ public class TestBase {
         DOMConfigurator.configure("log4j.xml");
     }
 
-    //I create homepage object to be able to call elements from this class
+    //I create page object to be able to call elements from these class
     public HomePage homePage = new HomePage();
 
     public LoginPage loginPage = new LoginPage();
+
+    public ProductListPage productListPage = new ProductListPage();
+
+    public ProductPage productPage = new ProductPage();
 
     //I wanted sending to console a message before starting
     @BeforeClass
