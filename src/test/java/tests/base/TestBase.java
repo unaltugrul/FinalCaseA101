@@ -7,6 +7,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -29,6 +31,12 @@ public class TestBase {
     public TestBase() {
         DOMConfigurator.configure("log4j.xml");
     }
+
+    //I used actions class to implement hover action for now
+    public Actions actions = new Actions(Driver.getDriver());
+
+    //I created wait object if I face with any delaying
+    public WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
 
     //I create page object to be able to call elements from these class
     public HomePage homePage = new HomePage();
