@@ -16,4 +16,7 @@ public class ProductPage {
     @FindBy(xpath = "//button[@class='add-to-basket button small']")
     public List<WebElement> sellerAddButtons;
 
+    @FindBy(xpath = "//button[text()='Sepete git']")
+    public WebElement sepeteGitButton;
+
 }
