@@ -20,4 +20,13 @@ public class CartPage {
     @FindBy(xpath = "//span[contains(@class,'merchant')]//a")
     public List<WebElement> merchantLinks;
 
+    //every product quantity
+    @FindBy(name = "quantity")
+    public List<WebElement> quantityOfProduct;
+
+    //delete button to delete products
+    @FindBy(xpath = "//a[@aria-label='Ürünü Kaldır']")
+    public WebElement deleteButton;
+
+
 }
