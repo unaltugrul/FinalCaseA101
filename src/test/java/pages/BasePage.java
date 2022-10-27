@@ -13,7 +13,7 @@ public abstract class BasePage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    //"hesabim" or "giris yap" button from main modul for dropdown menu
+    //"giris yap" button from main modul for dropdown menu
     @FindBy(id = "myAccount")
     public WebElement girisYapDropdown;
 
@@ -24,5 +24,9 @@ public abstract class BasePage {
     //search input box
     @FindBy(xpath = "//div[@role='combobox']/input[1]")
     public WebElement searchBox;
+
+    //hesabim dropdown menu link after logging in
+    @FindBy(xpath = "//a[@title='Hesabım']")
+    public WebElement hesabimDropdown;
 
 }
