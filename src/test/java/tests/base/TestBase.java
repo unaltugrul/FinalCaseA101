@@ -23,7 +23,7 @@ public class TestBase {
     //public driver field to be able to inherit
 
     //I created logger attribute object for logging my project
-    Logger logger = Logger.getLogger(TestBase.class);
+    public static Logger logger = Logger.getLogger(TestBase.class);
 
     //This constructor for logging configuration
     public TestBase() {
@@ -39,7 +39,7 @@ public class TestBase {
 
     public ProductPage productPage = new ProductPage();
 
-    public CartPage cartPage = new CartPage();
+    public static CartPage cartPage = new CartPage();
 
     //I wanted sending to console a message before starting
     @BeforeClass
