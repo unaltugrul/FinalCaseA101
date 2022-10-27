@@ -15,7 +15,6 @@ public class Browser {
 
         for (String each : allWindowsHandles) {
             driver.switchTo().window(each);
-            System.out.println("Current URL: " + driver.getCurrentUrl());
             if (driver.getCurrentUrl().contains(expectedInUrl)) {
                 break;
             }
