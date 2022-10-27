@@ -28,5 +28,8 @@ public class CartPage {
     @FindBy(xpath = "//a[@aria-label='Ürünü Kaldır']")
     public WebElement deleteButton;
 
+    @FindBy(xpath = "//div[contains(@class,'product_pro')]//a[contains(@class,'delete_pro')]")
+    public WebElement deleteAllLine;
+
 
 }
