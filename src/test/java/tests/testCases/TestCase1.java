@@ -1,9 +1,7 @@
 package tests.testCases;
-import org.apache.log4j.Logger;
-import org.apache.log4j.xml.DOMConfigurator;
+
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -12,9 +10,9 @@ import org.testng.annotations.*;
 import pages.*;
 import tests.base.TestBase;
 import utilities.Browser;
-import utilities.Driver;
 import utilities.LogLog;
-import utilities.UtilityMethods;
+
+import java.time.Duration;
 
 public class TestCase1 extends TestBase {
     //I used actions class to implement hover action for now
@@ -30,7 +28,7 @@ public class TestCase1 extends TestBase {
     @Test
     public void testone() throws InterruptedException {
         driver.get("https://www.hepsiburada.com/");
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
         Actions actions = new Actions(driver);
 
