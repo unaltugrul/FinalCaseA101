@@ -4642,3 +4642,69 @@
 2022-10-28 18:15:31,444 INFO  [TestCase1] PASSED - quantity of product is 1 
 2022-10-28 18:15:31,459 INFO  [TestCase1] PASSED - quantity of product is 1 
 2022-10-28 18:15:31,460 INFO  [TestCase1] Cart cleaning... 
+2022-10-28 18:40:58,703 INFO  [TestCase1] Test Execution is working... Feature - User adds product to cart by logging in... 
+2022-10-28 18:40:58,703 INFO  [TestCase1] Step 1-User hovers over "Giris Yap veya uye ol" button 
+2022-10-28 18:40:58,948 INFO  [TestCase1] Step 2-User clicks to "Giris Yap" option from opened dropdown menu 
+2022-10-28 18:40:59,584 INFO  [TestCase1] Step 3-User enters email address to input box 
+2022-10-28 18:41:01,422 INFO  [TestCase1] Step 4-User enters password to input box 
+2022-10-28 18:41:02,100 INFO  [TestCase1] Step 5-Verifying... that user is able to log in successfully 
+2022-10-28 18:41:07,039 INFO  [TestCase1] PASSED - User logged in successfully 
+2022-10-28 18:41:07,040 INFO  [TestCase1] Step 6-User enters product name to search box and press enter key 
+2022-10-28 18:41:07,405 INFO  [TestCase1] Step 7-User selects the product 
+2022-10-28 18:41:10,089 INFO  [TestCase1] Step 8-User adds product from two different seller 
+2022-10-28 18:41:15,255 INFO  [TestCase1] Step 9-User clicks "sepete git" button 
+2022-10-28 18:41:17,726 INFO  [TestCase1] Step 10-Verify that correct product has been added correctly to cart 
+2022-10-28 18:41:18,089 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-28 18:41:18,106 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-28 18:41:18,143 INFO  [TestCase1] PASSED - Number of total product is correct 
+2022-10-28 18:41:18,173 INFO  [TestCase1] PASSED - quantity of product is 1 
+2022-10-28 18:41:18,221 INFO  [TestCase1] PASSED - quantity of product is 1 
+2022-10-28 18:41:18,221 INFO  [TestCase1] Cart cleaning... 
+2022-10-28 18:46:14,047 INFO  [TestCase1] Test Execution is working... Feature - User adds product to cart by logging in... 
+2022-10-28 18:46:14,047 INFO  [TestCase1] Step 1-User hovers over "Giris Yap veya uye ol" button 
+2022-10-28 18:46:14,225 INFO  [TestCase1] Step 2-User clicks to "Giris Yap" option from opened dropdown menu 
+2022-10-28 18:46:14,847 INFO  [TestCase1] Step 3-User enters email address to input box 
+2022-10-28 18:46:17,433 INFO  [TestCase1] Step 4-User enters password to input box 
+2022-10-28 18:46:18,379 INFO  [TestCase1] Step 5-Verifying... that user is able to log in successfully 
+2022-10-28 18:46:23,240 INFO  [TestCase1] PASSED - User logged in successfully 
+2022-10-28 18:46:23,240 INFO  [TestCase1] Step 6-User enters product name to search box and press enter key 
+2022-10-28 18:46:23,450 INFO  [TestCase1] Step 7-User selects the product 
+2022-10-28 18:46:25,398 INFO  [TestCase1] Step 8-User adds product from two different seller 
+2022-10-28 18:46:29,514 INFO  [TestCase1] Step 9-User clicks "sepete git" button 
+2022-10-28 18:46:31,434 INFO  [TestCase1] Step 10-Verify that correct product has been added correctly to cart 
+2022-10-28 18:46:31,768 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-28 18:46:31,792 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-28 18:46:31,841 INFO  [TestCase1] PASSED - Number of total product is correct 
+2022-10-28 18:46:31,928 INFO  [TestCase1] PASSED - quantity of product is 1 
+2022-10-28 18:46:31,956 INFO  [TestCase1] PASSED - quantity of product is 1 
+2022-10-28 18:46:31,956 INFO  [TestCase1] Cart cleaning... 
+2022-10-28 18:48:46,347 INFO  [TestCase1] Test Execution is working... Feature - User adds product to cart by logging in... 
+2022-10-28 18:48:46,347 INFO  [TestCase1] Step 1-User hovers over "Giris Yap veya uye ol" button 
+2022-10-28 18:48:46,567 INFO  [TestCase1] Step 2-User clicks to "Giris Yap" option from opened dropdown menu 
+2022-10-28 18:48:47,240 INFO  [TestCase1] Step 3-User enters email address to input box 
+2022-10-28 18:48:49,404 INFO  [TestCase1] Step 4-User enters password to input box 
+2022-10-28 18:48:50,024 INFO  [TestCase1] Step 5-Verifying... that user is able to log in successfully 
+2022-10-28 18:48:54,215 INFO  [TestCase1] PASSED - User logged in successfully 
+2022-10-28 18:48:54,215 INFO  [TestCase1] Step 6-User enters product name to search box and press enter key 
+2022-10-28 18:48:54,582 INFO  [TestCase1] Step 7-User selects the product 
+2022-10-28 18:48:56,501 INFO  [TestCase1] Step 8-User adds product from two different seller 
+2022-10-28 18:49:00,389 INFO  [TestCase1] Step 9-User clicks "sepete git" button 
+2022-10-28 18:49:02,236 INFO  [TestCase1] Step 10-Verify that correct product has been added correctly to cart 
+2022-10-28 18:49:02,914 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-28 18:49:03,023 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-28 18:49:03,094 INFO  [TestCase1] PASSED - Number of total product is correct 
+2022-10-28 18:49:03,194 INFO  [TestCase1] PASSED - quantity of product is 1 
+2022-10-28 18:49:03,206 INFO  [TestCase1] PASSED - quantity of product is 1 
+2022-10-28 18:49:03,206 INFO  [TestCase1] Cart cleaning... 
+2022-10-28 18:49:27,760 INFO  [TestCase1] Step 6-User enters product name to search box and press enter key 
+2022-10-28 18:49:28,077 INFO  [TestCase1] Step 7-User selects the product 
+2022-10-28 18:49:29,992 INFO  [TestCase1] Step 8-User adds product from two different seller 
+2022-10-28 18:49:34,779 INFO  [TestCase1] Step 9-User clicks "sepete git" button 
+2022-10-28 18:49:37,707 INFO  [TestCase1] Step 10-Verify that correct product has been added correctly to cart 
+2022-10-28 18:49:38,218 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-28 18:49:38,266 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-28 18:49:38,308 INFO  [TestCase1] PASSED - Number of total product is correct 
+2022-10-28 18:49:38,400 INFO  [TestCase1] PASSED - quantity of product is 1 
+2022-10-28 18:49:38,419 INFO  [TestCase1] PASSED - quantity of product is 1 
+2022-10-28 18:49:38,419 INFO  [TestCase1] Cart cleaning... 
+2022-10-28 18:49:57,857 INFO  [TestCase1] Cart has been cleaned successfully! 
