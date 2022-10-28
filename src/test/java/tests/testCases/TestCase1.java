@@ -114,8 +114,14 @@ public class TestCase1 extends TestBase {
 
         //9-User clicks "sepete git" button
         logLog.info1("Step 9-User clicks \"sepete git\" button");
-        wait.until(ExpectedConditions.visibilityOf(productPage.sepeteGitButton));
-        productPage.sepeteGitButton.click();
+        //if there is no "sepete git button" clicks to "sepetim"
+        try {
+            wait.until(ExpectedConditions.visibilityOf(productPage.sepeteGitButton));
+            productPage.sepeteGitButton.click();
+
+        }catch (Exception e){
+            productPage.sepetimButton.click();
+        }
 
         //10-Verify that correct product has been added correctly to cart
         logLog.info1("Step 10-Verify that correct product has been added correctly to cart");
