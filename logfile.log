@@ -4804,3 +4804,344 @@
 2022-10-28 19:24:43,820 INFO  [TestCase2] Step 5-Verify that correct product has been added correctly to cart 
 2022-10-28 19:24:44,281 INFO  [TestCase2] PASSED - Product name is matching 
 2022-10-28 19:24:44,315 INFO  [TestCase2] Number of total product is not correct, check it. 
+2022-10-28 20:16:57,572 INFO  [TestCase1] PASSED - User is on the home page... 
+2022-10-28 20:16:57,572 INFO  [TestCase1] precondition is ending... 
+2022-10-28 20:16:57,784 INFO  [TestCase1] Test Execution is working... Feature - User adds product to cart by logging in... 
+2022-10-28 20:16:57,784 INFO  [TestCase1] Step 1-User hovers over "Giris Yap veya uye ol" button 
+2022-10-28 20:16:58,036 INFO  [TestCase1] Step 2-User clicks to "Giris Yap" option from opened dropdown menu 
+2022-10-28 20:16:58,627 INFO  [TestCase1] Step 3-User enters email address to input box 
+2022-10-28 20:17:01,214 INFO  [TestCase1] Step 4-User enters password to input box 
+2022-10-28 20:17:02,034 INFO  [TestCase1] Step 5-Verifying... that user is able to log in successfully 
+2022-10-28 20:17:06,718 INFO  [TestCase1] PASSED - User logged in successfully 
+2022-10-28 20:17:06,718 INFO  [TestCase1] Step 6-User enters product name to search box and press enter key 
+2022-10-28 20:17:06,957 INFO  [TestCase1] Step 7-User selects the product 
+2022-10-28 20:17:10,837 INFO  [TestCase1] Step 8-User adds product from two different seller 
+2022-10-28 20:17:14,974 INFO  [TestCase1] Step 9-User clicks "sepete git" button 
+2022-10-28 20:17:18,108 INFO  [TestCase1] Step 10-Verify that correct product has been added correctly to cart 
+2022-10-28 20:17:18,398 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-28 20:17:18,414 ERROR [TestCase1] Number of total product is not correct, check it. 
+2022-10-28 20:17:44,152 INFO  [TestCase1] PASSED - User is on the home page... 
+2022-10-28 20:17:44,152 INFO  [TestCase1] precondition is ending... 
+2022-10-28 20:17:44,277 INFO  [TestCase1] Test Execution is working... Feature - User adds product to cart by logging in... 
+2022-10-28 20:17:44,277 INFO  [TestCase1] Step 1-User hovers over "Giris Yap veya uye ol" button 
+2022-10-28 20:17:44,505 INFO  [TestCase1] Step 2-User clicks to "Giris Yap" option from opened dropdown menu 
+2022-10-28 20:17:45,403 INFO  [TestCase1] Step 3-User enters email address to input box 
+2022-10-28 20:17:47,513 INFO  [TestCase1] Step 4-User enters password to input box 
+2022-10-28 20:17:48,330 INFO  [TestCase1] Step 5-Verifying... that user is able to log in successfully 
+2022-10-28 20:17:52,420 INFO  [TestCase1] PASSED - User logged in successfully 
+2022-10-28 20:17:52,420 INFO  [TestCase1] Step 6-User enters product name to search box and press enter key 
+2022-10-28 20:17:52,778 INFO  [TestCase1] Step 7-User selects the product 
+2022-10-28 20:18:18,251 INFO  [TestCase1] PASSED - User is on the home page... 
+2022-10-28 20:18:18,251 INFO  [TestCase1] precondition is ending... 
+2022-10-28 20:18:18,358 INFO  [TestCase1] Test Execution is working... Feature - User adds product to cart by logging in... 
+2022-10-28 20:18:18,358 INFO  [TestCase1] Step 1-User hovers over "Giris Yap veya uye ol" button 
+2022-10-28 20:18:18,506 INFO  [TestCase1] Step 2-User clicks to "Giris Yap" option from opened dropdown menu 
+2022-10-28 20:18:19,833 INFO  [TestCase1] Step 3-User enters email address to input box 
+2022-10-28 20:18:21,734 INFO  [TestCase1] Step 4-User enters password to input box 
+2022-10-28 20:18:22,413 INFO  [TestCase1] Step 5-Verifying... that user is able to log in successfully 
+2022-10-28 20:18:26,913 INFO  [TestCase1] PASSED - User logged in successfully 
+2022-10-28 20:18:26,913 INFO  [TestCase1] Step 6-User enters product name to search box and press enter key 
+2022-10-28 20:18:27,151 INFO  [TestCase1] Step 7-User selects the product 
+2022-10-28 20:18:29,061 INFO  [TestCase1] Step 8-User adds product from two different seller 
+2022-10-28 20:18:33,036 INFO  [TestCase1] Step 9-User clicks "sepete git" button 
+2022-10-28 20:18:35,712 INFO  [TestCase1] Step 10-Verify that correct product has been added correctly to cart 
+2022-10-28 20:18:36,076 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-28 20:18:36,104 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-28 20:18:36,126 INFO  [TestCase1] PASSED - Number of total product is correct 
+2022-10-28 20:18:36,288 INFO  [TestCase1] PASSED - quantity of product is 1 
+2022-10-28 20:18:36,304 INFO  [TestCase1] PASSED - quantity of product is 1 
+2022-10-28 20:18:36,304 INFO  [TestCase1] Cart cleaning... 
+2022-10-28 20:19:44,691 INFO  [TestCase1] PASSED - User is on the home page... 
+2022-10-28 20:19:44,691 INFO  [TestCase1] precondition is ending... 
+2022-10-28 20:19:44,800 INFO  [TestCase1] Test Execution is working... Feature - User adds product to cart by logging in... 
+2022-10-28 20:19:44,800 INFO  [TestCase1] Step 1-User hovers over "Giris Yap veya uye ol" button 
+2022-10-28 20:19:44,950 INFO  [TestCase1] Step 2-User clicks to "Giris Yap" option from opened dropdown menu 
+2022-10-28 20:19:45,908 INFO  [TestCase1] Step 3-User enters email address to input box 
+2022-10-28 20:19:49,019 INFO  [TestCase1] Step 4-User enters password to input box 
+2022-10-28 20:19:49,826 INFO  [TestCase1] Step 5-Verifying... that user is able to log in successfully 
+2022-10-28 20:19:53,822 INFO  [TestCase1] PASSED - User logged in successfully 
+2022-10-28 20:19:53,822 INFO  [TestCase1] Step 6-User enters product name to search box and press enter key 
+2022-10-28 20:19:54,145 INFO  [TestCase1] Step 7-User selects the product 
+2022-10-28 20:19:56,087 INFO  [TestCase1] Step 8-User adds product from two different seller 
+2022-10-28 20:20:00,260 INFO  [TestCase1] Step 9-User clicks "sepete git" button 
+2022-10-28 20:20:03,017 INFO  [TestCase1] Step 10-Verify that correct product has been added correctly to cart 
+2022-10-28 20:20:03,355 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-28 20:20:03,379 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-28 20:20:03,392 INFO  [TestCase1] PASSED - Number of total product is correct 
+2022-10-28 20:20:03,433 INFO  [TestCase1] PASSED - quantity of product is 1 
+2022-10-28 20:20:03,452 INFO  [TestCase1] PASSED - quantity of product is 1 
+2022-10-28 20:20:03,452 INFO  [TestCase1] Cart cleaning... 
+2022-10-28 20:20:27,449 INFO  [TestCase2] PASSED - User is on the home page... 
+2022-10-28 20:20:27,600 INFO  [TestCase2] Step 1-User enters product name to search box and press enter key 
+2022-10-28 20:20:27,917 INFO  [TestCase2] Step 2-User selects the product 
+2022-10-28 20:20:30,056 INFO  [TestCase2] Step 3-User adds product from two different seller 
+2022-10-28 20:20:34,946 INFO  [TestCase2] Step 4-User clicks "sepete git" button 
+2022-10-28 20:20:38,140 INFO  [TestCase2] Step 5-Verify that correct product has been added correctly to cart 
+2022-10-28 20:20:38,745 INFO  [TestCase2] PASSED - Product name is matching 
+2022-10-28 20:20:38,764 INFO  [TestCase2] PASSED - Product name is matching 
+2022-10-28 20:20:38,797 INFO  [TestCase2] PASSED - Number of total product is correct 
+2022-10-28 20:20:38,880 INFO  [TestCase2] PASSED - quantity of product is 1 
+2022-10-28 20:20:38,903 INFO  [TestCase2] PASSED - quantity of product is 1 
+2022-10-28 20:20:38,903 INFO  [TestCase2] Cart cleaning... 
+2022-10-28 20:20:58,310 INFO  [TestCase2] Cart has been cleaned successfully! 
+2022-10-28 20:22:37,378 INFO  [TestCase1] PASSED - User is on the home page... 
+2022-10-28 20:22:37,379 INFO  [TestCase1] precondition is ending... 
+2022-10-28 20:22:37,561 INFO  [TestCase1] Test Execution is working... Feature - User adds product to cart by logging in... 
+2022-10-28 20:22:37,561 INFO  [TestCase1] Step 1-User hovers over "Giris Yap veya uye ol" button 
+2022-10-28 20:22:37,776 INFO  [TestCase1] Step 2-User clicks to "Giris Yap" option from opened dropdown menu 
+2022-10-28 20:22:38,768 INFO  [TestCase1] Step 3-User enters email address to input box 
+2022-10-28 20:22:41,063 INFO  [TestCase1] Step 4-User enters password to input box 
+2022-10-28 20:22:41,793 INFO  [TestCase1] Step 5-Verifying... that user is able to log in successfully 
+2022-10-28 20:22:46,013 INFO  [TestCase1] PASSED - User logged in successfully 
+2022-10-28 20:22:46,013 INFO  [TestCase1] Step 6-User enters product name to search box and press enter key 
+2022-10-28 20:22:46,320 INFO  [TestCase1] Step 7-User selects the product 
+2022-10-28 20:22:49,043 INFO  [TestCase1] Step 8-User adds product from two different seller 
+2022-10-28 20:22:55,562 INFO  [TestCase1] Step 9-User clicks "sepete git" button 
+2022-10-28 20:33:09,654 INFO  [TestCase1] PASSED - User is on the home page... 
+2022-10-28 20:33:09,654 INFO  [TestCase1] precondition is ending... 
+2022-10-28 20:33:09,767 INFO  [TestCase1] Test Execution is working... Feature - User adds product to cart by logging in... 
+2022-10-28 20:33:09,767 INFO  [TestCase1] Step 1-User hovers over "Giris Yap veya uye ol" button 
+2022-10-28 20:33:09,919 INFO  [TestCase1] Step 2-User clicks to "Giris Yap" option from opened dropdown menu 
+2022-10-28 20:33:10,851 INFO  [TestCase1] Step 3-User enters email address to input box 
+2022-10-28 20:33:12,910 INFO  [TestCase1] Step 4-User enters password to input box 
+2022-10-28 20:33:13,776 INFO  [TestCase1] Step 5-Verifying... that user is able to log in successfully 
+2022-10-28 20:33:18,597 INFO  [TestCase1] PASSED - User logged in successfully 
+2022-10-28 20:33:18,598 INFO  [TestCase1] Step 6-User enters product name to search box and press enter key 
+2022-10-28 20:33:18,946 INFO  [TestCase1] Step 7-User selects the product 
+2022-10-28 20:33:21,946 INFO  [TestCase1] Step 8-User adds product from two different seller 
+2022-10-28 20:33:25,927 INFO  [TestCase1] Step 9-User clicks "sepete git" button 
+2022-10-28 20:33:28,523 INFO  [TestCase1] Step 10-Verify that correct product has been added correctly to cart 
+2022-10-28 20:33:29,049 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-28 20:33:29,139 ERROR [TestCase1] Product name is not matching it might be different product check it 
+2022-10-28 20:34:07,161 INFO  [TestCase1] PASSED - User is on the home page... 
+2022-10-28 20:34:07,162 INFO  [TestCase1] precondition is ending... 
+2022-10-28 20:34:07,283 INFO  [TestCase1] Test Execution is working... Feature - User adds product to cart by logging in... 
+2022-10-28 20:34:07,283 INFO  [TestCase1] Step 1-User hovers over "Giris Yap veya uye ol" button 
+2022-10-28 20:34:07,457 INFO  [TestCase1] Step 2-User clicks to "Giris Yap" option from opened dropdown menu 
+2022-10-28 20:34:08,137 INFO  [TestCase1] Step 3-User enters email address to input box 
+2022-10-28 20:34:10,391 INFO  [TestCase1] Step 4-User enters password to input box 
+2022-10-28 20:34:11,144 INFO  [TestCase1] Step 5-Verifying... that user is able to log in successfully 
+2022-10-28 20:34:16,081 INFO  [TestCase1] PASSED - User logged in successfully 
+2022-10-28 20:34:16,081 INFO  [TestCase1] Step 6-User enters product name to search box and press enter key 
+2022-10-28 20:34:16,424 INFO  [TestCase1] Step 7-User selects the product 
+2022-10-28 20:34:18,995 INFO  [TestCase1] Step 8-User adds product from two different seller 
+2022-10-28 20:34:23,606 INFO  [TestCase1] Step 9-User clicks "sepete git" button 
+2022-10-28 20:34:26,575 INFO  [TestCase1] Step 10-Verify that correct product has been added correctly to cart 
+2022-10-28 20:34:27,544 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-28 20:34:27,585 ERROR [TestCase1] Number of total product is not correct, check it. 
+2022-10-28 20:35:29,342 INFO  [TestCase1] PASSED - User is on the home page... 
+2022-10-28 20:35:29,342 INFO  [TestCase1] precondition is ending... 
+2022-10-28 20:35:29,570 INFO  [TestCase1] Test Execution is working... Feature - User adds product to cart by logging in... 
+2022-10-28 20:35:29,570 INFO  [TestCase1] Step 1-User hovers over "Giris Yap veya uye ol" button 
+2022-10-28 20:35:29,727 INFO  [TestCase1] Step 2-User clicks to "Giris Yap" option from opened dropdown menu 
+2022-10-28 20:35:30,673 INFO  [TestCase1] Step 3-User enters email address to input box 
+2022-10-28 20:35:32,813 INFO  [TestCase1] Step 4-User enters password to input box 
+2022-10-28 20:35:33,696 INFO  [TestCase1] Step 5-Verifying... that user is able to log in successfully 
+2022-10-28 20:35:38,133 INFO  [TestCase1] PASSED - User logged in successfully 
+2022-10-28 20:35:38,133 INFO  [TestCase1] Step 6-User enters product name to search box and press enter key 
+2022-10-28 20:35:38,403 INFO  [TestCase1] Step 7-User selects the product 
+2022-10-28 20:52:33,240 INFO  [TestCase1] PASSED - User is on the home page... 
+2022-10-28 20:52:33,240 INFO  [TestCase1] precondition is ending... 
+2022-10-28 20:52:33,419 INFO  [TestCase1] Test Execution is working... Feature - User adds product to cart by logging in... 
+2022-10-28 20:52:33,419 INFO  [TestCase1] Step 1-User hovers over "Giris Yap veya uye ol" button 
+2022-10-28 20:52:33,601 INFO  [TestCase1] Step 2-User clicks to "Giris Yap" option from opened dropdown menu 
+2022-10-28 20:52:35,669 INFO  [TestCase1] Step 3-User enters email address to input box 
+2022-10-28 20:52:39,625 INFO  [TestCase1] Step 4-User enters password to input box 
+2022-10-28 20:52:40,359 INFO  [TestCase1] Step 5-Verifying... that user is able to log in successfully 
+2022-10-28 20:52:44,942 INFO  [TestCase1] PASSED - User logged in successfully 
+2022-10-28 20:52:44,942 INFO  [TestCase1] Step 6-User enters product name to search box and press enter key 
+2022-10-28 20:52:45,174 INFO  [TestCase1] Step 7-User selects the product 
+2022-10-28 20:52:48,126 INFO  [TestCase1] Step 8-User adds product from two different seller 
+2022-10-28 20:52:52,184 INFO  [TestCase1] Step 9-User clicks "sepete git" button 
+2022-10-28 20:52:55,233 INFO  [TestCase1] Step 10-Verify that correct product has been added correctly to cart 
+2022-10-28 20:52:55,755 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-28 20:52:55,845 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-28 20:52:55,899 INFO  [TestCase1] PASSED - Number of total product is correct 
+2022-10-28 20:52:56,005 INFO  [TestCase1] PASSED - quantity of product is 1 
+2022-10-28 20:52:56,026 INFO  [TestCase1] PASSED - quantity of product is 1 
+2022-10-28 20:52:56,067 INFO  [TestCase1] PASSED - Merchant names different 
+2022-10-28 20:52:56,067 INFO  [TestCase1] Cart cleaning... 
+2022-10-28 21:09:19,290 INFO  [TestCase1] PASSED - User is on the home page... 
+2022-10-28 21:09:19,290 INFO  [TestCase1] precondition is ending... 
+2022-10-28 21:09:19,409 INFO  [TestCase1] Test Execution is working... Feature - User adds product to cart by logging in... 
+2022-10-28 21:09:19,409 INFO  [TestCase1] Step 1-User hovers over "Giris Yap veya uye ol" button 
+2022-10-28 21:09:19,625 INFO  [TestCase1] Step 2-User clicks to "Giris Yap" option from opened dropdown menu 
+2022-10-28 21:09:20,371 INFO  [TestCase1] Step 3-User enters email address to input box 
+2022-10-28 21:09:22,534 INFO  [TestCase1] Step 4-User enters password to input box 
+2022-10-28 21:09:23,286 INFO  [TestCase1] Step 5-Verifying... that user is able to log in successfully 
+2022-10-28 21:09:27,301 INFO  [TestCase1] PASSED - User logged in successfully 
+2022-10-28 21:09:27,301 INFO  [TestCase1] Step 6-User enters product name to search box and press enter key 
+2022-10-28 21:09:27,637 INFO  [TestCase1] Step 7-User selects the product 
+2022-10-28 21:09:30,258 INFO  [TestCase1] Step 8-User adds product from two different seller 
+2022-10-28 21:09:34,595 INFO  [TestCase1] Step 9-User clicks "sepete git" button 
+2022-10-28 21:09:37,244 INFO  [TestCase1] Step 10-Verify that correct product has been added correctly to cart 
+2022-10-28 21:09:37,816 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-28 21:09:37,852 ERROR [TestCase1] Number of total product is not correct, check it. 
+2022-10-28 21:11:00,985 INFO  [TestCase1] PASSED - User is on the home page... 
+2022-10-28 21:11:00,986 INFO  [TestCase1] precondition is ending... 
+2022-10-28 21:11:01,094 INFO  [TestCase1] Test Execution is working... Feature - User adds product to cart by logging in... 
+2022-10-28 21:11:01,094 INFO  [TestCase1] Step 1-User hovers over "Giris Yap veya uye ol" button 
+2022-10-28 21:11:01,247 INFO  [TestCase1] Step 2-User clicks to "Giris Yap" option from opened dropdown menu 
+2022-10-28 21:11:01,834 INFO  [TestCase1] Step 3-User enters email address to input box 
+2022-10-28 21:11:03,999 INFO  [TestCase1] Step 4-User enters password to input box 
+2022-10-28 21:11:04,908 INFO  [TestCase1] Step 5-Verifying... that user is able to log in successfully 
+2022-10-28 21:11:09,598 INFO  [TestCase1] PASSED - User logged in successfully 
+2022-10-28 21:11:09,598 INFO  [TestCase1] Step 6-User enters product name to search box and press enter key 
+2022-10-28 21:11:10,055 INFO  [TestCase1] Step 7-User selects the product 
+2022-10-28 21:11:12,525 INFO  [TestCase1] Step 8-User adds product from two different seller 
+2022-10-28 21:11:17,658 INFO  [TestCase1] Step 9-User clicks "sepete git" button 
+2022-10-28 21:11:19,650 INFO  [TestCase1] Step 10-Verify that correct product has been added correctly to cart 
+2022-10-28 21:11:20,010 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-28 21:11:20,042 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-28 21:11:20,127 INFO  [TestCase1] PASSED - Number of total product is correct 
+2022-10-28 21:11:20,289 INFO  [TestCase1] PASSED - quantity of product is 1 
+2022-10-28 21:11:20,317 ERROR [TestCase1] quantity of product is not 1 
+2022-10-28 21:11:25,648 INFO  [TestCase2] PASSED - User is on the home page... 
+2022-10-28 21:11:25,762 INFO  [TestCase2] Step 1-User enters product name to search box and press enter key 
+2022-10-28 21:11:26,012 INFO  [TestCase2] Step 2-User selects the product 
+2022-10-28 21:11:28,037 INFO  [TestCase2] Step 3-User adds product from two different seller 
+2022-10-28 21:11:34,013 INFO  [TestCase2] Step 4-User clicks "sepete git" button 
+2022-10-28 21:11:35,043 INFO  [TestCase2] Step 5-Verify that correct product has been added correctly to cart 
+2022-10-28 21:11:35,405 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-28 21:11:35,435 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-28 21:11:35,442 INFO  [TestCase1] PASSED - Number of total product is correct 
+2022-10-28 21:11:35,460 INFO  [TestCase1] PASSED - quantity of product is 1 
+2022-10-28 21:11:35,470 INFO  [TestCase1] PASSED - quantity of product is 1 
+2022-10-28 21:11:35,700 INFO  [TestCase1] PASSED - Merchant name different 
+2022-10-28 21:11:35,700 INFO  [TestCase1] Cart cleaning... 
+2022-10-28 21:11:55,039 INFO  [TestCase2] Cart has been cleaned successfully! 
+2022-10-28 21:14:44,483 INFO  [TestCase1] PASSED - User is on the home page... 
+2022-10-28 21:14:44,484 INFO  [TestCase1] precondition is ending... 
+2022-10-28 21:14:44,607 INFO  [TestCase1] Test Execution is working... Feature - User adds product to cart by logging in... 
+2022-10-28 21:14:44,607 INFO  [TestCase1] Step 1-User hovers over "Giris Yap veya uye ol" button 
+2022-10-28 21:14:44,813 INFO  [TestCase1] Step 2-User clicks to "Giris Yap" option from opened dropdown menu 
+2022-10-28 21:14:45,666 INFO  [TestCase1] Step 3-User enters email address to input box 
+2022-10-28 21:14:47,787 INFO  [TestCase1] Step 4-User enters password to input box 
+2022-10-28 21:14:48,592 INFO  [TestCase1] Step 5-Verifying... that user is able to log in successfully 
+2022-10-28 21:14:53,389 INFO  [TestCase1] PASSED - User logged in successfully 
+2022-10-28 21:14:53,390 INFO  [TestCase1] Step 6-User enters product name to search box and press enter key 
+2022-10-28 21:14:56,375 INFO  [TestCase1] Step 7-User selects the product 
+2022-10-28 21:14:56,543 INFO  [TestCase1] Step 8-User adds product from two different seller 
+2022-10-28 21:15:01,785 INFO  [TestCase1] Step 9-User clicks "sepete git" button 
+2022-10-28 21:15:04,399 INFO  [TestCase1] Step 10-Verify that correct product has been added correctly to cart 
+2022-10-28 21:15:04,895 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-28 21:15:04,941 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-28 21:15:04,971 INFO  [TestCase1] PASSED - Number of total product is correct 
+2022-10-28 21:15:05,032 ERROR [TestCase1] quantity of product is not 1 
+2022-10-28 21:15:05,050 ERROR [TestCase1] quantity of product is not 1 
+2022-10-28 21:15:05,090 INFO  [TestCase1] PASSED - Merchant name different 
+2022-10-28 21:15:05,090 INFO  [TestCase1] Cart cleaning... 
+2022-10-28 21:15:20,259 INFO  [TestCase2] Cart has been cleaned successfully! 
+2022-10-28 21:16:20,883 INFO  [TestCase1] PASSED - User is on the home page... 
+2022-10-28 21:16:20,884 INFO  [TestCase1] precondition is ending... 
+2022-10-28 21:16:21,050 INFO  [TestCase1] Test Execution is working... Feature - User adds product to cart by logging in... 
+2022-10-28 21:16:21,050 INFO  [TestCase1] Step 1-User hovers over "Giris Yap veya uye ol" button 
+2022-10-28 21:16:21,235 INFO  [TestCase1] Step 2-User clicks to "Giris Yap" option from opened dropdown menu 
+2022-10-28 21:16:21,946 INFO  [TestCase1] Step 3-User enters email address to input box 
+2022-10-28 21:16:24,221 INFO  [TestCase1] Step 4-User enters password to input box 
+2022-10-28 21:16:24,915 INFO  [TestCase1] Step 5-Verifying... that user is able to log in successfully 
+2022-10-28 21:16:29,191 INFO  [TestCase1] PASSED - User logged in successfully 
+2022-10-28 21:16:29,191 INFO  [TestCase1] Step 6-User enters product name to search box and press enter key 
+2022-10-28 21:16:29,540 INFO  [TestCase1] Step 7-User selects the product 
+2022-10-28 21:16:31,514 INFO  [TestCase1] Step 8-User adds product from two different seller 
+2022-10-28 21:16:36,836 INFO  [TestCase1] Step 9-User clicks "sepete git" button 
+2022-10-28 21:16:41,402 INFO  [TestCase1] Step 10-Verify that correct product has been added correctly to cart 
+2022-10-28 21:16:41,805 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-28 21:16:41,844 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-28 21:16:41,911 INFO  [TestCase1] PASSED - Number of total product is correct 
+2022-10-28 21:16:41,998 ERROR [TestCase1] quantity of product is not 1 
+2022-10-28 21:16:42,021 ERROR [TestCase1] quantity of product is not 1 
+2022-10-28 21:16:42,071 INFO  [TestCase1] PASSED - Merchant name different 
+2022-10-28 21:16:42,071 INFO  [TestCase1] Cart cleaning... 
+2022-10-28 21:16:57,214 INFO  [TestCase2] Cart has been cleaned successfully! 
+2022-10-28 21:18:04,217 INFO  [TestCase1] PASSED - User is on the home page... 
+2022-10-28 21:18:04,217 INFO  [TestCase1] precondition is ending... 
+2022-10-28 21:18:04,323 INFO  [TestCase1] Test Execution is working... Feature - User adds product to cart by logging in... 
+2022-10-28 21:18:04,323 INFO  [TestCase1] Step 1-User hovers over "Giris Yap veya uye ol" button 
+2022-10-28 21:18:04,473 INFO  [TestCase1] Step 2-User clicks to "Giris Yap" option from opened dropdown menu 
+2022-10-28 21:18:05,292 INFO  [TestCase1] Step 3-User enters email address to input box 
+2022-10-28 21:18:07,227 INFO  [TestCase1] Step 4-User enters password to input box 
+2022-10-28 21:18:07,957 INFO  [TestCase1] Step 5-Verifying... that user is able to log in successfully 
+2022-10-28 21:18:12,597 INFO  [TestCase1] PASSED - User logged in successfully 
+2022-10-28 21:18:12,597 INFO  [TestCase1] Step 6-User enters product name to search box and press enter key 
+2022-10-28 21:18:12,839 INFO  [TestCase1] Step 7-User selects the product 
+2022-10-28 21:18:14,884 INFO  [TestCase1] Step 8-User adds product from two different seller 
+2022-10-28 21:18:20,244 INFO  [TestCase1] Step 9-User clicks "sepete git" button 
+2022-10-28 21:18:22,210 INFO  [TestCase1] Step 10-Verify that correct product has been added correctly to cart 
+2022-10-28 21:18:22,613 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-28 21:18:22,725 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-28 21:18:22,780 INFO  [TestCase1] PASSED - Number of total product is correct 
+2022-10-28 21:18:22,838 ERROR [TestCase1] quantity of product is not 1 
+2022-10-28 21:18:22,881 ERROR [TestCase1] quantity of product is not 1 
+2022-10-28 21:18:22,930 INFO  [TestCase1] PASSED - Merchant name different 
+2022-10-28 21:18:22,930 INFO  [TestCase1] Cart cleaning... 
+2022-10-28 21:26:14,736 INFO  [TestCase1] PASSED - User is on the home page... 
+2022-10-28 21:26:14,737 INFO  [TestCase1] precondition is ending... 
+2022-10-28 21:26:14,861 INFO  [TestCase1] Test Execution is working... Feature - User adds product to cart by logging in... 
+2022-10-28 21:26:14,861 INFO  [TestCase1] Step 1-User hovers over "Giris Yap veya uye ol" button 
+2022-10-28 21:26:15,074 INFO  [TestCase1] Step 2-User clicks to "Giris Yap" option from opened dropdown menu 
+2022-10-28 21:26:15,813 INFO  [TestCase1] Step 3-User enters email address to input box 
+2022-10-28 21:26:17,704 INFO  [TestCase1] Step 4-User enters password to input box 
+2022-10-28 21:26:18,422 INFO  [TestCase1] Step 5-Verifying... that user is able to log in successfully 
+2022-10-28 21:26:22,476 INFO  [TestCase1] PASSED - User logged in successfully 
+2022-10-28 21:26:22,477 INFO  [TestCase1] Step 6-User enters product name to search box and press enter key 
+2022-10-28 21:26:22,799 INFO  [TestCase1] Step 7-User selects the product 
+2022-10-28 21:26:25,134 INFO  [TestCase1] Step 8-User adds product from two different seller 
+2022-10-28 21:26:29,697 INFO  [TestCase1] Step 9-User clicks "sepete git" button 
+2022-10-28 21:26:32,999 INFO  [TestCase1] Step 10-Verify that correct product has been added correctly to cart 
+2022-10-28 21:26:33,580 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-28 21:26:33,700 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-28 21:26:33,726 INFO  [TestCase1] PASSED - Number of total product is correct 
+2022-10-28 21:26:33,753 ERROR [TestCase1] quantity of product is not 1 
+2022-10-28 21:26:33,801 ERROR [TestCase1] quantity of product is not 1 
+2022-10-28 21:26:33,854 INFO  [TestCase1] PASSED - Merchant name different 
+2022-10-28 21:26:33,854 INFO  [TestCase1] Cart cleaning... 
+2022-10-28 21:26:51,211 INFO  [TestCase2] Cart has been cleaned successfully! 
+2022-10-28 21:27:05,735 INFO  [TestCase1] PASSED - User is on the home page... 
+2022-10-28 21:27:05,735 INFO  [TestCase1] precondition is ending... 
+2022-10-28 21:27:06,066 INFO  [TestCase1] Test Execution is working... Feature - User adds product to cart by logging in... 
+2022-10-28 21:27:06,066 INFO  [TestCase1] Step 1-User hovers over "Giris Yap veya uye ol" button 
+2022-10-28 21:27:06,288 INFO  [TestCase1] Step 2-User clicks to "Giris Yap" option from opened dropdown menu 
+2022-10-28 21:27:07,025 INFO  [TestCase1] Step 3-User enters email address to input box 
+2022-10-28 21:27:09,505 INFO  [TestCase1] Step 4-User enters password to input box 
+2022-10-28 21:27:10,386 INFO  [TestCase1] Step 5-Verifying... that user is able to log in successfully 
+2022-10-28 21:27:14,888 INFO  [TestCase1] PASSED - User logged in successfully 
+2022-10-28 21:27:14,889 INFO  [TestCase1] Step 6-User enters product name to search box and press enter key 
+2022-10-28 21:27:15,195 INFO  [TestCase1] Step 7-User selects the product 
+2022-10-28 21:27:17,411 INFO  [TestCase1] Step 8-User adds product from two different seller 
+2022-10-28 21:27:22,877 INFO  [TestCase1] Step 9-User clicks "sepete git" button 
+2022-10-28 21:27:25,486 INFO  [TestCase1] Step 10-Verify that correct product has been added correctly to cart 
+2022-10-28 21:27:25,914 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-28 21:27:26,037 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-28 21:27:26,083 INFO  [TestCase1] PASSED - Number of total product is correct 
+2022-10-28 21:27:26,189 INFO  [TestCase1] PASSED - quantity of product is 1 
+2022-10-28 21:27:26,203 INFO  [TestCase1] PASSED - quantity of product is 1 
+2022-10-28 21:27:26,245 INFO  [TestCase1] PASSED - Merchant name different 
+2022-10-28 21:27:26,245 INFO  [TestCase1] Cart cleaning... 
+2022-10-28 21:27:43,581 INFO  [TestCase2] Cart has been cleaned successfully! 
+2022-10-28 21:27:49,324 INFO  [TestCase2] PASSED - User is on the home page... 
+2022-10-28 21:27:49,428 INFO  [TestCase2] Step 1-User enters product name to search box and press enter key 
+2022-10-28 21:27:49,821 INFO  [TestCase2] Step 2-User selects the product 
+2022-10-28 21:27:52,977 INFO  [TestCase2] Step 3-User adds product from two different seller 
+2022-10-28 21:27:59,336 INFO  [TestCase2] Step 4-User clicks "sepete git" button 
+2022-10-28 21:29:51,473 INFO  [TestCase1] PASSED - User is on the home page... 
+2022-10-28 21:29:51,474 INFO  [TestCase1] precondition is ending... 
+2022-10-28 21:29:51,793 INFO  [TestCase1] Test Execution is working... Feature - User adds product to cart by logging in... 
+2022-10-28 21:29:51,793 INFO  [TestCase1] Step 1-User hovers over "Giris Yap veya uye ol" button 
+2022-10-28 21:29:51,950 INFO  [TestCase1] Step 2-User clicks to "Giris Yap" option from opened dropdown menu 
+2022-10-28 21:29:52,558 INFO  [TestCase1] Step 3-User enters email address to input box 
+2022-10-28 21:29:54,869 INFO  [TestCase1] Step 4-User enters password to input box 
+2022-10-28 21:32:02,214 INFO  [TestCase2] PASSED - User is on the home page... 
+2022-10-28 21:32:02,319 INFO  [TestCase2] Step 1-User enters product name to search box and press enter key 
+2022-10-28 21:32:02,538 INFO  [TestCase2] Step 2-User selects the product 
+2022-10-28 21:32:04,730 INFO  [TestCase2] Step 3-User adds product from two different seller 
+2022-10-28 21:32:13,095 INFO  [TestCase2] Step 4-User clicks "sepete git" button 
+2022-10-28 21:32:14,908 INFO  [TestCase2] Step 5-Verify that correct product has been added correctly to cart 
+2022-10-28 21:32:15,169 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-28 21:32:15,204 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-28 21:32:15,222 INFO  [TestCase1] PASSED - Number of total product is correct 
+2022-10-28 21:32:15,263 INFO  [TestCase1] PASSED - quantity of product is 1 
+2022-10-28 21:32:15,275 INFO  [TestCase1] PASSED - quantity of product is 1 
+2022-10-28 21:32:15,310 INFO  [TestCase1] PASSED - Merchant name different 
+2022-10-28 21:32:15,310 INFO  [TestCase1] Cart cleaning... 
+2022-10-28 21:32:24,813 INFO  [TestCase2] Cart has been cleaned successfully! 
