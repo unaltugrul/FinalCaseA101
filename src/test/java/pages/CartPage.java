@@ -31,11 +31,7 @@ public class CartPage {
     @FindBy(name = "quantity")
     public List<WebElement> quantityOfProduct;
 
-    //delete button to delete products
-    @FindBy(xpath = "//a[@aria-label='Ürünü Kaldır']")
-    public WebElement deleteButton;
-
-    @FindBy(xpath = "//div[contains(@class,'product_pro')]//a[contains(@class,'delete_pro')]")
+    @FindBy(xpath = "//div[contains(@class,'hover')]//a[1]")
     public WebElement deleteAllLine;
 
 
