@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -9,9 +10,19 @@ import utilities.Driver;
 public abstract class BasePage {
     //I am going to add all common elements on the web page
     //constructor to initialize with PageFactory Class
-    public BasePage(){
-        PageFactory.initElements(Driver.getDriver(), this);
+
+    WebDriver driver;
+    // bir page sayfasi olusturuldugunda mutlaka yapmamiz gereken sey
+    // bir constructor olusturup driver'a ilk degeri atamaktir (instantiate)
+    public BasePage(WebDriver driver){
+        this.driver=driver;
+        PageFactory.initElements(driver,this);
     }
+
+    public BasePage(){
+
+    }
+
 
     //"giris yap" button from main modul for dropdown menu
     @FindBy(id = "myAccount")
