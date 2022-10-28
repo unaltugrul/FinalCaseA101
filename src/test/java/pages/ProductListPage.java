@@ -8,8 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class ProductListPage {
 
     WebDriver driver;
-    // bir page sayfasi olusturuldugunda mutlaka yapmamiz gereken sey
-    // bir constructor olusturup driver'a ilk degeri atamaktir (instantiate)
+
     public ProductListPage(WebDriver driver){
         this.driver=driver;
         PageFactory.initElements(driver,this);

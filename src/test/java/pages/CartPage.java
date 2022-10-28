@@ -9,8 +9,7 @@ import java.util.List;
 
 public class CartPage {
     WebDriver driver;
-    // bir page sayfasi olusturuldugunda mutlaka yapmamiz gereken sey
-    // bir constructor olusturup driver'a ilk degeri atamaktir (instantiate)
+
     public CartPage(WebDriver driver){
         this.driver=driver;
         PageFactory.initElements(driver,this);

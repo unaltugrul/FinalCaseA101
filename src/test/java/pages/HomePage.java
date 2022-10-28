@@ -9,8 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 public class HomePage extends BasePage{
 
     WebDriver driver;
-    // bir page sayfasi olusturuldugunda mutlaka yapmamiz gereken sey
-    // bir constructor olusturup driver'a ilk degeri atamaktir (instantiate)
+
     public HomePage(WebDriver driver){
         this.driver=driver;
         PageFactory.initElements(driver,this);

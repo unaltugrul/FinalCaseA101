@@ -7,17 +7,18 @@ import org.openqa.selenium.support.PageFactory;
 
 //I used abstract because I don't want to create object from this class
 public abstract class BasePage {
-    //I am going to add all common elements on the web page
-    //constructor to initialize with PageFactory Class
+    //I am going to add all common elements on the web page to this page
 
+    //driver instance, I am going to assign this driver to this page for every cycle
     WebDriver driver;
-    // bir page sayfasi olusturuldugunda mutlaka yapmamiz gereken sey
-    // bir constructor olusturup driver'a ilk degeri atamaktir (instantiate)
+
+    //constructor to give first value and to initialize driver with PageFactory Class
     public BasePage(WebDriver driver){
         this.driver=driver;
         PageFactory.initElements(driver,this);
     }
 
+    //empty constructor to trigger this class while finding for every element
     public BasePage(){
 
     }
