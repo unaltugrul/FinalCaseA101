@@ -40,4 +40,8 @@ public abstract class BasePage {
     @FindBy(xpath = "//a[@title='Hesabım']")
     public WebElement hesabimDropdown;
 
+    //sepetim Button
+    @FindBy(xpath = "//span[@id='shoppingCart']/..")
+    public WebElement sepetimButton;
+
 }
