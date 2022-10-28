@@ -41,27 +41,27 @@ public class TestCase2 extends TestBase {
         String actualResult = driver.getTitle();
         Assert.assertEquals(expectedResult, actualResult);
         if (driver.getTitle().equals("Türkiye'nin En Büyük Online Alışveriş Sitesi Hepsiburada.com")) {
-            //logger.info("PASSED - User is on the home page...");
+            logLog.info2("PASSED - User is on the home page...");
         } else {
-            //logger.error("FAILED - User is not on home page.");
+            logLog.error2("FAILED - User is not on home page.");
         }
-        //logger.info("precondition is ending...");
+        //logger.info2("precondition is ending...");
         //2-user accepts cookies
 
         wait.until(ExpectedConditions.visibilityOf(homePage.cookiesAcceptButton));
         homePage.cookiesAcceptButton.click();
 
         //6-User enters product name to search box and press enter key
-        logLog.info("Step 1-User enters product name to search box and press enter key");
+        logLog.info2("Step 1-User enters product name to search box and press enter key");
         String productName = "Yeni Başlayanlar İçin Java 10";
         homePage.searchBox.sendKeys(productName + Keys.ENTER);
 
         //7-User selects the product
-        logLog.info("Step 2-User selects the product");
+        logLog.info2("Step 2-User selects the product");
         productListPage.productLink.click();
 
         //8-User adds product from two different seller
-        logLog.info("Step 3-User adds product from two different seller");
+        logLog.info2("Step 3-User adds product from two different seller");
         Browser.switchWindow(driver, productName);
 
         for (WebElement eachSellerAddButton : productPage.sellerAddButtons) {
@@ -70,42 +70,42 @@ public class TestCase2 extends TestBase {
         }
 
         //9-User clicks "sepete git" button
-        logLog.info("Step 4-User clicks \"sepete git\" button");
+        logLog.info2("Step 4-User clicks \"sepete git\" button");
         wait.until(ExpectedConditions.visibilityOf(productPage.sepeteGitButton));
         productPage.sepeteGitButton.click();
 
         //10-Verify that correct product has been added correctly to cart
-        logLog.info("Step 5-Verify that correct product has been added correctly to cart");
+        logLog.info2("Step 5-Verify that correct product has been added correctly to cart");
         for (WebElement eachProductLink : cartPage.productLinks) {
             if (!eachProductLink.getText().contains(productName)) {
-                logLog.error("Product name is not matching it might be different product check it");
+                logLog.error2("Product name is not matching it might be different product check it");
                 Assert.assertTrue(false, "Product name is not matching it might be different product check it");
             } else {
-                logLog.info("PASSED - Product name is matching");
+                logLog.info2("PASSED - Product name is matching");
                 Assert.assertTrue(true);
             }
         }
 
         if (cartPage.productLinks.size() != 2) {
-            logLog.error("Number of total product is not correct, check it.");
+            logLog.error2("Number of total product is not correct, check it.");
             Assert.assertTrue(false, "Number of total product should be 2 pcs. check it please.");
         } else {
-            logLog.info("PASSED - Number of total product is correct");
+            logLog.info2("PASSED - Number of total product is correct");
             Assert.assertTrue(true);
         }
 
         for (WebElement eachProductQuantity : cartPage.quantityOfProduct) {
             String quantityOfProduct = eachProductQuantity.getAttribute("value");
             if (!quantityOfProduct.equals("1")) {
-                logLog.error("quantity of product is not 1");
+                logLog.error2("quantity of product is not 1");
                 Assert.assertTrue(false, "quantity of product is not 1");
             } else {
-                logLog.info("PASSED - quantity of product is 1");
+                logLog.info2("PASSED - quantity of product is 1");
             }
         }
 
         //This loop for cleaning the cart
-        logLog.info("Cart cleaning...");
+        logLog.info2("Cart cleaning...");
         actions.moveToElement(cartPage.deleteAllLine).perform();
         while (true) {
             try {
@@ -117,7 +117,7 @@ public class TestCase2 extends TestBase {
             }
             Thread.sleep(2000);
         }
-        logLog.info("Cart has been cleaned successfully!");
+        logLog.info2("Cart has been cleaned successfully!");
 
 
     }
