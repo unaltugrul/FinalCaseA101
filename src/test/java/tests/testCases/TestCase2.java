@@ -17,7 +17,7 @@ import java.time.Duration;
 public class TestCase2 extends TestBase {
 
     @Test
-    public void testtwo() {
+    public void second_test() {
 
         //1-User navigates to home page
         driver.get("https://www.hepsiburada.com/");
@@ -36,7 +36,6 @@ public class TestCase2 extends TestBase {
         LogLog logLog = new LogLog();
 
         Actions actions = new Actions(driver);
-
 
         String expectedResult = "Türkiye'nin En Büyük Online Alışveriş Sitesi Hepsiburada.com";
         String actualResult = driver.getTitle();
