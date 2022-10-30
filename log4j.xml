@@ -24,3 +24,5 @@
     </root>
 
 </log4j:configuration>
+
+<!--this configuration for the logging to console and file -->
