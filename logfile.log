@@ -5341,3 +5341,641 @@
 2022-10-29 10:58:45,379 INFO  [TestCase1] Cart cleaning... 
 2022-10-29 10:58:54,804 INFO  [TestCase2] Cart has been cleaned successfully! 
 2022-10-29 10:58:54,804 INFO  [ListenerClass] TEST second_test EXECUTED SUCCESSFULLY! 
+2022-10-30 17:41:59,558 INFO  [TestCase1] PASSED - User is on the home page... 
+2022-10-30 17:41:59,892 INFO  [TestCase1] Test Execution is working... Feature - User adds product to cart by logging in... 
+2022-10-30 17:41:59,892 INFO  [TestCase1] Step 1-User hovers over "Giris Yap veya uye ol" button 
+2022-10-30 17:42:00,146 INFO  [TestCase1] Step 2-User clicks to "Giris Yap" option from opened dropdown menu 
+2022-10-30 17:42:01,037 INFO  [TestCase1] Step 3-User enters email address to input box 
+2022-10-30 17:42:03,090 INFO  [TestCase1] Step 4-User enters password to input box 
+2022-10-30 17:42:04,322 INFO  [TestCase1] Step 5-Verifying... that user is able to log in successfully 
+2022-10-30 17:42:09,382 INFO  [TestCase1] PASSED - User logged in successfully 
+2022-10-30 17:42:09,382 INFO  [TestCase1] Step 6-User enters product name to search box and press enter key 
+2022-10-30 17:42:09,804 INFO  [TestCase1] Step 7-User selects the product 
+2022-10-30 17:42:13,002 INFO  [TestCase1] Step 8-User adds product from two different seller 
+2022-10-30 17:42:17,467 INFO  [TestCase1] Step 9-User clicks "sepete git" button 
+2022-10-30 17:42:19,950 INFO  [TestCase1] Step 10-Verify that correct product has been added correctly to cart 
+2022-10-30 17:42:20,352 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-30 17:42:20,370 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-30 17:42:20,414 INFO  [TestCase1] PASSED - quantity of product is 1 
+2022-10-30 17:42:20,468 INFO  [TestCase1] PASSED - quantity of product is 1 
+2022-10-30 17:42:20,593 INFO  [TestCase1] PASSED - Merchant name different 
+2022-10-30 17:42:20,593 INFO  [TestCase1] Cart cleaning... 
+2022-10-30 17:42:28,021 INFO  [TestCase2] Cart has been cleaned successfully! 
+2022-10-30 17:53:10,437 INFO  [ListenerClass] Welcome to  
+2022-10-30 17:53:10,758 DEBUG [InternalLoggerFactory] Using Log4J as the default logging framework 
+2022-10-30 17:53:10,760 DEBUG [ResourceLeakDetector] -Dio.netty.leakDetection.level: simple 
+2022-10-30 17:53:10,760 DEBUG [ResourceLeakDetector] -Dio.netty.leakDetection.targetRecords: 4 
+2022-10-30 17:53:10,762 DEBUG [ResourceLeakDetectorFactory] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@21d8bcbe 
+2022-10-30 17:53:10,775 DEBUG [PlatformDependent0] -Dio.netty.noUnsafe: false 
+2022-10-30 17:53:10,775 DEBUG [PlatformDependent0] Java version: 11 
+2022-10-30 17:53:10,776 DEBUG [PlatformDependent0] sun.misc.Unsafe.theUnsafe: available 
+2022-10-30 17:53:10,777 DEBUG [PlatformDependent0] sun.misc.Unsafe.copyMemory: available 
+2022-10-30 17:53:10,777 DEBUG [PlatformDependent0] java.nio.Buffer.address: available 
+2022-10-30 17:53:10,777 DEBUG [PlatformDependent0] direct buffer constructor: unavailable 
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31)
+	at io.netty.util.internal.PlatformDependent0$4.run(PlatformDependent0.java:253)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:247)
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:294)
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:88)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:114)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:251)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:224)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:203)
+	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111)
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:90)
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32)
+	at org.openqa.selenium.remote.http.netty.NettyClient.createHttpClient(NettyClient.java:119)
+	at org.openqa.selenium.remote.http.netty.NettyClient.<clinit>(NettyClient.java:52)
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:160)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:107)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:94)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:85)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:80)
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.<init>(ChromiumDriverCommandExecutor.java:35)
+	at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.<init>(ChromeDriver.java:118)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:93)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
+	at tests.base.TestBase.setup(TestBase.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+2022-10-30 17:53:10,781 DEBUG [PlatformDependent0] java.nio.Bits.unaligned: available, true 
+2022-10-30 17:53:10,782 DEBUG [PlatformDependent0] jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable 
+java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @f9d87b
+	at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:361)
+	at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:591)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:558)
+	at io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:375)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:366)
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:294)
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:88)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:114)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:251)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:224)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:203)
+	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111)
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:90)
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32)
+	at org.openqa.selenium.remote.http.netty.NettyClient.createHttpClient(NettyClient.java:119)
+	at org.openqa.selenium.remote.http.netty.NettyClient.<clinit>(NettyClient.java:52)
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:160)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:107)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:94)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:85)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:80)
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.<init>(ChromiumDriverCommandExecutor.java:35)
+	at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.<init>(ChromeDriver.java:118)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:93)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
+	at tests.base.TestBase.setup(TestBase.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+2022-10-30 17:53:10,785 DEBUG [PlatformDependent0] java.nio.DirectByteBuffer.<init>(long, int): unavailable 
+2022-10-30 17:53:10,785 DEBUG [PlatformDependent] sun.misc.Unsafe: available 
+2022-10-30 17:53:10,794 DEBUG [PlatformDependent] maxDirectMemory: 4227858432 bytes (maybe) 
+2022-10-30 17:53:10,794 DEBUG [PlatformDependent] -Dio.netty.tmpdir: C:\Users\unalt\AppData\Local\Temp (java.io.tmpdir) 
+2022-10-30 17:53:10,794 DEBUG [PlatformDependent] -Dio.netty.bitMode: 64 (sun.arch.data.model) 
+2022-10-30 17:53:10,794 DEBUG [PlatformDependent] Platform: Windows 
+2022-10-30 17:53:10,795 DEBUG [PlatformDependent] -Dio.netty.maxDirectMemory: -1 bytes 
+2022-10-30 17:53:10,795 DEBUG [PlatformDependent] -Dio.netty.uninitializedArrayAllocationThreshold: -1 
+2022-10-30 17:53:10,795 DEBUG [CleanerJava9] java.nio.ByteBuffer.cleaner(): available 
+2022-10-30 17:53:10,795 DEBUG [PlatformDependent] -Dio.netty.noPreferDirect: false 
+2022-10-30 17:53:10,800 DEBUG [PlatformDependent] org.jctools-core.MpscChunkedArrayQueue: available 
+2022-10-30 17:53:10,811 DEBUG [InternalThreadLocalMap] -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024 
+2022-10-30 17:53:10,811 DEBUG [InternalThreadLocalMap] -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096 
+2022-10-30 17:53:10,825 DEBUG [JdkSslContext] Default protocols (JDK): [TLSv1.3, TLSv1.2]  
+2022-10-30 17:53:10,825 DEBUG [JdkSslContext] Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384] 
+2022-10-30 17:53:10,839 DEBUG [MultithreadEventLoopGroup] -Dio.netty.eventLoopThreads: 32 
+2022-10-30 17:53:10,843 DEBUG [NioEventLoop] -Dio.netty.noKeySetOptimization: false 
+2022-10-30 17:53:10,843 DEBUG [NioEventLoop] -Dio.netty.selectorAutoRebuildThreshold: 512 
+2022-10-30 17:53:10,849 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4d0402b 
+2022-10-30 17:53:10,850 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@60afd40d 
+2022-10-30 17:53:10,850 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@28a2a3e7 
+2022-10-30 17:53:10,851 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3f2049b6 
+2022-10-30 17:53:10,851 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@10b3df93 
+2022-10-30 17:53:10,852 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@ea27e34 
+2022-10-30 17:53:10,852 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@33a2499c 
+2022-10-30 17:53:10,852 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@e72dba7 
+2022-10-30 17:53:10,853 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@33c2bd 
+2022-10-30 17:53:10,853 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1dfd5f51 
+2022-10-30 17:53:10,853 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3c321bdb 
+2022-10-30 17:53:10,854 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@24855019 
+2022-10-30 17:53:10,854 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3abd581e 
+2022-10-30 17:53:10,855 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4d4d8fcf 
+2022-10-30 17:53:10,855 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@610db97e 
+2022-10-30 17:53:10,855 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6f0628de 
+2022-10-30 17:53:10,856 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3fabf088 
+2022-10-30 17:53:10,856 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1e392345 
+2022-10-30 17:53:10,857 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@12f3afb5 
+2022-10-30 17:53:10,857 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4ced35ed 
+2022-10-30 17:53:10,857 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2c22a348 
+2022-10-30 17:53:10,858 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7bd69e82 
+2022-10-30 17:53:10,858 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@74d7184a 
+2022-10-30 17:53:10,858 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@51b01960 
+2022-10-30 17:53:10,859 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6831d8fd 
+2022-10-30 17:53:10,859 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@27dc79f7 
+2022-10-30 17:53:10,860 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6b85300e 
+2022-10-30 17:53:10,860 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3aaf4f07 
+2022-10-30 17:53:10,860 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5cbf9e9f 
+2022-10-30 17:53:10,861 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@18e8473e 
+2022-10-30 17:53:10,861 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5a2f016d 
+2022-10-30 17:53:10,861 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1a38ba58 
+2022-10-30 17:53:10,874 DEBUG [PooledByteBufAllocator] -Dio.netty.allocator.numHeapArenas: 32 
+2022-10-30 17:53:10,874 DEBUG [PooledByteBufAllocator] -Dio.netty.allocator.numDirectArenas: 32 
+2022-10-30 17:53:10,874 DEBUG [PooledByteBufAllocator] -Dio.netty.allocator.pageSize: 8192 
+2022-10-30 17:53:10,874 DEBUG [PooledByteBufAllocator] -Dio.netty.allocator.maxOrder: 9 
+2022-10-30 17:53:10,874 DEBUG [PooledByteBufAllocator] -Dio.netty.allocator.chunkSize: 4194304 
+2022-10-30 17:53:10,874 DEBUG [PooledByteBufAllocator] -Dio.netty.allocator.smallCacheSize: 256 
+2022-10-30 17:53:10,874 DEBUG [PooledByteBufAllocator] -Dio.netty.allocator.normalCacheSize: 64 
+2022-10-30 17:53:10,874 DEBUG [PooledByteBufAllocator] -Dio.netty.allocator.maxCachedBufferCapacity: 32768 
+2022-10-30 17:53:10,874 DEBUG [PooledByteBufAllocator] -Dio.netty.allocator.cacheTrimInterval: 8192 
+2022-10-30 17:53:10,874 DEBUG [PooledByteBufAllocator] -Dio.netty.allocator.cacheTrimIntervalMillis: 0 
+2022-10-30 17:53:10,874 DEBUG [PooledByteBufAllocator] -Dio.netty.allocator.useCacheForAllThreads: false 
+2022-10-30 17:53:10,874 DEBUG [PooledByteBufAllocator] -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023 
+2022-10-30 17:53:10,881 DEBUG [ByteBufUtil] -Dio.netty.allocator.type: pooled 
+2022-10-30 17:53:10,881 DEBUG [ByteBufUtil] -Dio.netty.threadLocalDirectBufferSize: 0 
+2022-10-30 17:53:10,881 DEBUG [ByteBufUtil] -Dio.netty.maxThreadLocalCharBufferSize: 16384 
+2022-10-30 17:53:11,582 DEBUG [DefaultChannelId] -Dio.netty.processId: 21444 (auto-detected) 
+2022-10-30 17:53:11,583 DEBUG [NetUtil] -Djava.net.preferIPv4Stack: false 
+2022-10-30 17:53:11,583 DEBUG [NetUtil] -Djava.net.preferIPv6Addresses: false 
+2022-10-30 17:53:11,719 DEBUG [NetUtilInitializations] Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1) 
+2022-10-30 17:53:11,719 DEBUG [NetUtil] Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200 
+2022-10-30 17:53:11,861 DEBUG [DefaultChannelId] -Dio.netty.machineId: 9c:29:76:ff:fe:8a:c1:d6 (auto-detected) 
+2022-10-30 17:53:11,895 DEBUG [AbstractByteBuf] -Dio.netty.buffer.checkAccessible: true 
+2022-10-30 17:53:11,895 DEBUG [AbstractByteBuf] -Dio.netty.buffer.checkBounds: true 
+2022-10-30 17:53:11,895 DEBUG [ResourceLeakDetectorFactory] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@56738973 
+2022-10-30 17:53:11,910 DEBUG [Recycler] -Dio.netty.recycler.maxCapacityPerThread: 4096 
+2022-10-30 17:53:11,910 DEBUG [Recycler] -Dio.netty.recycler.ratio: 8 
+2022-10-30 17:53:11,910 DEBUG [Recycler] -Dio.netty.recycler.chunkSize: 32 
+2022-10-30 17:53:11,910 DEBUG [Recycler] -Dio.netty.recycler.blocking: false 
+2022-10-30 17:53:12,629 DEBUG [Brotli] brotli4j not in the classpath; Brotli support will be unavailable. 
+2022-10-30 17:53:12,708 DEBUG [ThreadLocalRandom] -Dio.netty.initialSeedUniquifier: 0xc376700d43de8736 
+2022-10-30 17:53:15,601 INFO  [TestCase1] PASSED - User is on the home page... 
+2022-10-30 17:53:15,776 INFO  [TestCase1] Test Execution is working... Feature - User adds product to cart by logging in... 
+2022-10-30 17:53:15,776 INFO  [TestCase1] Step 1-User hovers over "Giris Yap veya uye ol" button 
+2022-10-30 17:53:15,985 INFO  [TestCase1] Step 2-User clicks to "Giris Yap" option from opened dropdown menu 
+2022-10-30 17:53:16,678 INFO  [TestCase1] Step 3-User enters email address to input box 
+2022-10-30 17:53:19,255 INFO  [TestCase1] Step 4-User enters password to input box 
+2022-10-30 17:53:20,021 INFO  [TestCase1] Step 5-Verifying... that user is able to log in successfully 
+2022-10-30 17:53:24,872 INFO  [TestCase1] PASSED - User logged in successfully 
+2022-10-30 17:53:24,872 INFO  [TestCase1] Step 6-User enters product name to search box and press enter key 
+2022-10-30 17:53:25,557 INFO  [TestCase1] Step 7-User selects the product 
+2022-10-30 17:53:28,026 INFO  [TestCase1] Step 8-User adds product from two different seller 
+2022-10-30 17:53:32,430 INFO  [TestCase1] Step 9-User clicks "sepete git" button 
+2022-10-30 17:53:35,056 INFO  [TestCase1] Step 10-Verify that correct product has been added correctly to cart 
+2022-10-30 17:53:35,448 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-30 17:53:35,498 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-30 17:53:35,644 INFO  [TestCase1] PASSED - quantity of product is 1 
+2022-10-30 17:53:35,671 INFO  [TestCase1] PASSED - quantity of product is 1 
+2022-10-30 17:53:35,737 INFO  [TestCase1] PASSED - Merchant name different 
+2022-10-30 17:53:35,737 INFO  [TestCase1] Cart cleaning... 
+2022-10-30 17:53:43,060 INFO  [TestCase1] Cart has been cleaned successfully! 
+2022-10-30 17:53:43,064 INFO  [ListenerClass] TEST first_test EXECUTED SUCCESSFULLY! 
+2022-10-30 17:53:43,068 TRACE [WebSocket08FrameEncoder] Encoding WebSocket Frame opCode=8 length=26 
+2022-10-30 17:53:48,078 INFO  [TestCase2] PASSED - User is on the home page... 
+2022-10-30 17:53:48,224 INFO  [TestCase2] Step 1-User enters product name to search box and press enter key 
+2022-10-30 17:53:48,412 INFO  [TestCase2] Step 2-User selects the product 
+2022-10-30 17:53:51,710 INFO  [TestCase2] Step 3-User adds product from two different seller 
+2022-10-30 17:53:59,965 INFO  [TestCase2] Step 4-User clicks "sepete git" button 
+2022-10-30 17:54:00,718 INFO  [TestCase2] Step 5-Verify that correct product has been added correctly to cart 
+2022-10-30 17:54:01,185 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-30 17:54:01,202 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-30 17:54:01,209 INFO  [TestCase1] PASSED - Number of total product is correct 
+2022-10-30 17:54:01,229 INFO  [TestCase1] PASSED - quantity of product is 1 
+2022-10-30 17:54:01,245 INFO  [TestCase1] PASSED - quantity of product is 1 
+2022-10-30 17:54:01,286 INFO  [TestCase1] PASSED - Merchant name different 
+2022-10-30 17:54:01,287 INFO  [TestCase1] Cart cleaning... 
+2022-10-30 17:54:11,993 INFO  [TestCase2] Cart has been cleaned successfully! 
+2022-10-30 17:54:11,994 INFO  [ListenerClass] TEST second_test EXECUTED SUCCESSFULLY! 
+2022-10-30 17:54:11,995 TRACE [WebSocket08FrameEncoder] Encoding WebSocket Frame opCode=8 length=26 
+2022-10-30 17:57:47,450 INFO  [TestCase2] PASSED - User is on the home page... 
+2022-10-30 17:57:47,612 INFO  [TestCase2] Step 1-User enters product name to search box and press enter key 
+2022-10-30 17:57:47,935 INFO  [TestCase2] Step 2-User selects the product 
+2022-10-30 17:57:50,509 INFO  [TestCase2] Step 3-User adds product from two different seller 
+2022-10-30 17:57:58,007 INFO  [TestCase2] Step 4-User clicks "sepete git" button 
+2022-10-30 17:58:03,920 INFO  [TestCase2] Step 5-Verify that correct product has been added correctly to cart 
+2022-10-30 17:58:04,629 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-30 17:58:04,646 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-30 17:58:04,668 INFO  [TestCase1] PASSED - Number of total product is correct 
+2022-10-30 17:58:04,777 INFO  [TestCase1] PASSED - quantity of product is 1 
+2022-10-30 17:58:04,799 INFO  [TestCase1] PASSED - quantity of product is 1 
+2022-10-30 17:58:04,900 INFO  [TestCase1] PASSED - Merchant name different 
+2022-10-30 17:58:04,900 INFO  [TestCase1] Cart cleaning... 
+2022-10-30 17:58:14,272 INFO  [TestCase2] Cart has been cleaned successfully! 
+2022-10-30 17:58:14,277 TRACE [WebSocket08FrameEncoder] Encoding WebSocket Frame opCode=8 length=26 
+2022-10-30 17:58:14,972 DEBUG [cache] Couldn't find template in cache for "results.ftl"("en_US", UTF-8, parsed); will try to load it. 
+2022-10-30 17:58:14,972 DEBUG [cache] TemplateLoader.findTemplateSource("results_en_US.ftl"): Not found 
+2022-10-30 17:58:14,973 DEBUG [cache] TemplateLoader.findTemplateSource("results_en.ftl"): Not found 
+2022-10-30 17:58:14,974 DEBUG [cache] TemplateLoader.findTemplateSource("results.ftl"): Found 
+2022-10-30 17:58:14,974 DEBUG [cache] Loading template for "results.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/unalt/.m2/repository/org/testng/reportng/1.2.2/reportng-1.2.2.jar!/org/uncommons/reportng/templates/xml/results.ftl" 
+2022-10-30 17:58:15,087 DEBUG [cache] Couldn't find template in cache for "index.ftl"("en_US", UTF-8, parsed); will try to load it. 
+2022-10-30 17:58:15,088 DEBUG [cache] TemplateLoader.findTemplateSource("index_en_US.ftl"): Not found 
+2022-10-30 17:58:15,088 DEBUG [cache] TemplateLoader.findTemplateSource("index_en.ftl"): Not found 
+2022-10-30 17:58:15,088 DEBUG [cache] TemplateLoader.findTemplateSource("index.ftl"): Found 
+2022-10-30 17:58:15,088 DEBUG [cache] Loading template for "index.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/unalt/.m2/repository/org/testng/reportng/1.2.2/reportng-1.2.2.jar!/org/uncommons/reportng/templates/html/index.ftl" 
+2022-10-30 17:58:15,108 DEBUG [cache] Couldn't find template in cache for "results.ftl"("en_US", UTF-8, parsed); will try to load it. 
+2022-10-30 17:58:15,108 DEBUG [cache] TemplateLoader.findTemplateSource("results_en_US.ftl"): Not found 
+2022-10-30 17:58:15,108 DEBUG [cache] TemplateLoader.findTemplateSource("results_en.ftl"): Not found 
+2022-10-30 17:58:15,108 DEBUG [cache] TemplateLoader.findTemplateSource("results.ftl"): Found 
+2022-10-30 17:58:15,108 DEBUG [cache] Loading template for "results.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/unalt/.m2/repository/org/testng/reportng/1.2.2/reportng-1.2.2.jar!/org/uncommons/reportng/templates/html/results.ftl" 
+2022-10-30 17:58:15,113 DEBUG [cache] Couldn't find template in cache for "class-results.ftl"("en_US", UTF-8, parsed); will try to load it. 
+2022-10-30 17:58:15,113 DEBUG [cache] TemplateLoader.findTemplateSource("class-results_en_US.ftl"): Not found 
+2022-10-30 17:58:15,114 DEBUG [cache] TemplateLoader.findTemplateSource("class-results_en.ftl"): Not found 
+2022-10-30 17:58:15,114 DEBUG [cache] TemplateLoader.findTemplateSource("class-results.ftl"): Found 
+2022-10-30 17:58:15,114 DEBUG [cache] Loading template for "class-results.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/unalt/.m2/repository/org/testng/reportng/1.2.2/reportng-1.2.2.jar!/org/uncommons/reportng/templates/html/class-results.ftl" 
+2022-10-30 18:00:46,694 INFO  [TestCase2] PASSED - User is on the home page... 
+2022-10-30 18:00:46,849 INFO  [TestCase2] Step 1-User enters product name to search box and press enter key 
+2022-10-30 18:00:47,125 INFO  [TestCase2] Step 2-User selects the product 
+2022-10-30 18:00:50,365 INFO  [TestCase2] Step 3-User adds product from two different seller 
+2022-10-30 18:00:57,566 INFO  [TestCase2] Step 4-User clicks "sepete git" button 
+2022-10-30 18:01:03,816 INFO  [TestCase2] Step 5-Verify that correct product has been added correctly to cart 
+2022-10-30 18:01:04,310 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-30 18:01:04,358 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-30 18:01:04,370 INFO  [TestCase1] PASSED - Number of total product is correct 
+2022-10-30 18:01:04,455 INFO  [TestCase1] PASSED - quantity of product is 1 
+2022-10-30 18:01:04,480 INFO  [TestCase1] PASSED - quantity of product is 1 
+2022-10-30 18:01:04,551 INFO  [TestCase1] PASSED - Merchant name different 
+2022-10-30 18:01:04,551 INFO  [TestCase1] Cart cleaning... 
+2022-10-30 18:01:14,027 INFO  [TestCase2] Cart has been cleaned successfully! 
+2022-10-30 18:01:14,032 TRACE [WebSocket08FrameEncoder] Encoding WebSocket Frame opCode=8 length=26 
+2022-10-30 18:10:34,607 INFO  [TestCase1] PASSED - User is on the home page... 
+2022-10-30 18:10:34,766 INFO  [TestCase1] Test Execution is working... Feature - User adds product to cart by logging in... 
+2022-10-30 18:10:34,766 INFO  [TestCase1] Step 1-User hovers over "Giris Yap veya uye ol" button 
+2022-10-30 18:10:34,948 INFO  [TestCase1] Step 2-User clicks to "Giris Yap" option from opened dropdown menu 
+2022-10-30 18:10:35,494 INFO  [TestCase1] Step 3-User enters email address to input box 
+2022-10-30 18:10:37,494 INFO  [TestCase1] Step 4-User enters password to input box 
+2022-10-30 18:10:38,369 INFO  [TestCase1] Step 5-Verifying... that user is able to log in successfully 
+2022-10-30 18:10:43,179 INFO  [TestCase1] PASSED - User logged in successfully 
+2022-10-30 18:10:43,179 INFO  [TestCase1] Step 6-User enters product name to search box and press enter key 
+2022-10-30 18:10:43,422 INFO  [TestCase1] Step 7-User selects the product 
+2022-10-30 18:10:46,013 INFO  [TestCase1] Step 8-User adds product from two different seller 
+2022-10-30 18:10:51,123 INFO  [TestCase1] Step 9-User clicks "sepete git" button 
+2022-10-30 18:10:53,132 INFO  [TestCase1] Step 10-Verify that correct product has been added correctly to cart 
+2022-10-30 18:10:55,141 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-30 18:10:55,200 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-30 18:10:55,294 INFO  [TestCase1] PASSED - quantity of product is 1 
+2022-10-30 18:10:55,309 INFO  [TestCase1] PASSED - quantity of product is 1 
+2022-10-30 18:10:55,388 INFO  [TestCase1] PASSED - Merchant name different 
+2022-10-30 18:10:55,388 INFO  [TestCase1] Cart cleaning... 
+2022-10-30 18:11:03,820 INFO  [TestCase1] Cart has been cleaned successfully! 
+2022-10-30 18:11:03,826 TRACE [WebSocket08FrameEncoder] Encoding WebSocket Frame opCode=8 length=26 
+2022-10-30 18:20:27,112 INFO  [ListenerClass] Welcome to  
+2022-10-30 18:20:27,455 DEBUG [InternalLoggerFactory] Using Log4J as the default logging framework 
+2022-10-30 18:20:27,457 DEBUG [ResourceLeakDetector] -Dio.netty.leakDetection.level: simple 
+2022-10-30 18:20:27,457 DEBUG [ResourceLeakDetector] -Dio.netty.leakDetection.targetRecords: 4 
+2022-10-30 18:20:27,459 DEBUG [ResourceLeakDetectorFactory] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5bf22f18 
+2022-10-30 18:20:27,468 DEBUG [PlatformDependent0] -Dio.netty.noUnsafe: false 
+2022-10-30 18:20:27,468 DEBUG [PlatformDependent0] Java version: 11 
+2022-10-30 18:20:27,469 DEBUG [PlatformDependent0] sun.misc.Unsafe.theUnsafe: available 
+2022-10-30 18:20:27,469 DEBUG [PlatformDependent0] sun.misc.Unsafe.copyMemory: available 
+2022-10-30 18:20:27,469 DEBUG [PlatformDependent0] java.nio.Buffer.address: available 
+2022-10-30 18:20:27,470 DEBUG [PlatformDependent0] direct buffer constructor: unavailable 
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31)
+	at io.netty.util.internal.PlatformDependent0$4.run(PlatformDependent0.java:253)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:247)
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:294)
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:88)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:114)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:251)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:224)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:203)
+	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111)
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:90)
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32)
+	at org.openqa.selenium.remote.http.netty.NettyClient.createHttpClient(NettyClient.java:119)
+	at org.openqa.selenium.remote.http.netty.NettyClient.<clinit>(NettyClient.java:52)
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:160)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:107)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:94)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:85)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:80)
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.<init>(ChromiumDriverCommandExecutor.java:35)
+	at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.<init>(ChromeDriver.java:118)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:93)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
+	at tests.base.TestBase.setup(TestBase.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+2022-10-30 18:20:27,474 DEBUG [PlatformDependent0] java.nio.Bits.unaligned: available, true 
+2022-10-30 18:20:27,475 DEBUG [PlatformDependent0] jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable 
+java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @3e2822
+	at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:361)
+	at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:591)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:558)
+	at io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:375)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:366)
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:294)
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:88)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:114)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:251)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:224)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:203)
+	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111)
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:90)
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32)
+	at org.openqa.selenium.remote.http.netty.NettyClient.createHttpClient(NettyClient.java:119)
+	at org.openqa.selenium.remote.http.netty.NettyClient.<clinit>(NettyClient.java:52)
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:160)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:107)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:94)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:85)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:80)
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.<init>(ChromiumDriverCommandExecutor.java:35)
+	at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.<init>(ChromeDriver.java:118)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:93)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
+	at tests.base.TestBase.setup(TestBase.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+2022-10-30 18:20:27,477 DEBUG [PlatformDependent0] java.nio.DirectByteBuffer.<init>(long, int): unavailable 
+2022-10-30 18:20:27,477 DEBUG [PlatformDependent] sun.misc.Unsafe: available 
+2022-10-30 18:20:27,485 DEBUG [PlatformDependent] maxDirectMemory: 4227858432 bytes (maybe) 
+2022-10-30 18:20:27,486 DEBUG [PlatformDependent] -Dio.netty.tmpdir: C:\Users\unalt\AppData\Local\Temp (java.io.tmpdir) 
+2022-10-30 18:20:27,486 DEBUG [PlatformDependent] -Dio.netty.bitMode: 64 (sun.arch.data.model) 
+2022-10-30 18:20:27,486 DEBUG [PlatformDependent] Platform: Windows 
+2022-10-30 18:20:27,486 DEBUG [PlatformDependent] -Dio.netty.maxDirectMemory: -1 bytes 
+2022-10-30 18:20:27,487 DEBUG [PlatformDependent] -Dio.netty.uninitializedArrayAllocationThreshold: -1 
+2022-10-30 18:20:27,487 DEBUG [CleanerJava9] java.nio.ByteBuffer.cleaner(): available 
+2022-10-30 18:20:27,487 DEBUG [PlatformDependent] -Dio.netty.noPreferDirect: false 
+2022-10-30 18:20:27,493 DEBUG [PlatformDependent] org.jctools-core.MpscChunkedArrayQueue: available 
+2022-10-30 18:20:27,505 DEBUG [InternalThreadLocalMap] -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024 
+2022-10-30 18:20:27,505 DEBUG [InternalThreadLocalMap] -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096 
+2022-10-30 18:20:27,519 DEBUG [JdkSslContext] Default protocols (JDK): [TLSv1.3, TLSv1.2]  
+2022-10-30 18:20:27,519 DEBUG [JdkSslContext] Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384] 
+2022-10-30 18:20:27,533 DEBUG [MultithreadEventLoopGroup] -Dio.netty.eventLoopThreads: 32 
+2022-10-30 18:20:27,538 DEBUG [NioEventLoop] -Dio.netty.noKeySetOptimization: false 
+2022-10-30 18:20:27,538 DEBUG [NioEventLoop] -Dio.netty.selectorAutoRebuildThreshold: 512 
+2022-10-30 18:20:27,544 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@27dc79f7 
+2022-10-30 18:20:27,544 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5a2f016d 
+2022-10-30 18:20:27,545 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1a38ba58 
+2022-10-30 18:20:27,545 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3ad394e6 
+2022-10-30 18:20:27,545 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6058e535 
+2022-10-30 18:20:27,545 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@42deb43a 
+2022-10-30 18:20:27,546 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1deb2c43 
+2022-10-30 18:20:27,546 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3bb9efbc 
+2022-10-30 18:20:27,546 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1cefc4b3 
+2022-10-30 18:20:27,547 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2b27cc70 
+2022-10-30 18:20:27,547 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6f6a7463 
+2022-10-30 18:20:27,547 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1bdaa23d 
+2022-10-30 18:20:27,548 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@79f227a9 
+2022-10-30 18:20:27,548 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6ca320ab 
+2022-10-30 18:20:27,550 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@50d68830 
+2022-10-30 18:20:27,550 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1e53135d 
+2022-10-30 18:20:27,550 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7674a051 
+2022-10-30 18:20:27,550 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3a7704c 
+2022-10-30 18:20:27,550 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6754ef00 
+2022-10-30 18:20:27,551 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@619bd14c 
+2022-10-30 18:20:27,551 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@323e8306 
+2022-10-30 18:20:27,551 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@a23a01d 
+2022-10-30 18:20:27,552 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4acf72b6 
+2022-10-30 18:20:27,552 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7561db12 
+2022-10-30 18:20:27,552 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3301500b 
+2022-10-30 18:20:27,554 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@24b52d3e 
+2022-10-30 18:20:27,554 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@15deb1dc 
+2022-10-30 18:20:27,554 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6e9c413e 
+2022-10-30 18:20:27,554 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@57a4d5ee 
+2022-10-30 18:20:27,554 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5af5def9 
+2022-10-30 18:20:27,554 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3a45c42a 
+2022-10-30 18:20:27,555 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@36dce7ed 
+2022-10-30 18:20:27,568 DEBUG [PooledByteBufAllocator] -Dio.netty.allocator.numHeapArenas: 32 
+2022-10-30 18:20:27,568 DEBUG [PooledByteBufAllocator] -Dio.netty.allocator.numDirectArenas: 32 
+2022-10-30 18:20:27,568 DEBUG [PooledByteBufAllocator] -Dio.netty.allocator.pageSize: 8192 
+2022-10-30 18:20:27,568 DEBUG [PooledByteBufAllocator] -Dio.netty.allocator.maxOrder: 9 
+2022-10-30 18:20:27,568 DEBUG [PooledByteBufAllocator] -Dio.netty.allocator.chunkSize: 4194304 
+2022-10-30 18:20:27,568 DEBUG [PooledByteBufAllocator] -Dio.netty.allocator.smallCacheSize: 256 
+2022-10-30 18:20:27,568 DEBUG [PooledByteBufAllocator] -Dio.netty.allocator.normalCacheSize: 64 
+2022-10-30 18:20:27,568 DEBUG [PooledByteBufAllocator] -Dio.netty.allocator.maxCachedBufferCapacity: 32768 
+2022-10-30 18:20:27,568 DEBUG [PooledByteBufAllocator] -Dio.netty.allocator.cacheTrimInterval: 8192 
+2022-10-30 18:20:27,568 DEBUG [PooledByteBufAllocator] -Dio.netty.allocator.cacheTrimIntervalMillis: 0 
+2022-10-30 18:20:27,568 DEBUG [PooledByteBufAllocator] -Dio.netty.allocator.useCacheForAllThreads: false 
+2022-10-30 18:20:27,568 DEBUG [PooledByteBufAllocator] -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023 
+2022-10-30 18:20:27,575 DEBUG [ByteBufUtil] -Dio.netty.allocator.type: pooled 
+2022-10-30 18:20:27,575 DEBUG [ByteBufUtil] -Dio.netty.threadLocalDirectBufferSize: 0 
+2022-10-30 18:20:27,575 DEBUG [ByteBufUtil] -Dio.netty.maxThreadLocalCharBufferSize: 16384 
+2022-10-30 18:20:28,251 DEBUG [DefaultChannelId] -Dio.netty.processId: 15336 (auto-detected) 
+2022-10-30 18:20:28,252 DEBUG [NetUtil] -Djava.net.preferIPv4Stack: false 
+2022-10-30 18:20:28,252 DEBUG [NetUtil] -Djava.net.preferIPv6Addresses: false 
+2022-10-30 18:20:28,385 DEBUG [NetUtilInitializations] Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1) 
+2022-10-30 18:20:28,386 DEBUG [NetUtil] Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200 
+2022-10-30 18:20:28,523 DEBUG [DefaultChannelId] -Dio.netty.machineId: 9c:29:76:ff:fe:8a:c1:d6 (auto-detected) 
+2022-10-30 18:20:28,561 DEBUG [AbstractByteBuf] -Dio.netty.buffer.checkAccessible: true 
+2022-10-30 18:20:28,562 DEBUG [AbstractByteBuf] -Dio.netty.buffer.checkBounds: true 
+2022-10-30 18:20:28,562 DEBUG [ResourceLeakDetectorFactory] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@726e62ff 
+2022-10-30 18:20:28,577 DEBUG [Recycler] -Dio.netty.recycler.maxCapacityPerThread: 4096 
+2022-10-30 18:20:28,577 DEBUG [Recycler] -Dio.netty.recycler.ratio: 8 
+2022-10-30 18:20:28,577 DEBUG [Recycler] -Dio.netty.recycler.chunkSize: 32 
+2022-10-30 18:20:28,577 DEBUG [Recycler] -Dio.netty.recycler.blocking: false 
+2022-10-30 18:20:29,346 DEBUG [Brotli] brotli4j not in the classpath; Brotli support will be unavailable. 
+2022-10-30 18:20:29,435 DEBUG [ThreadLocalRandom] -Dio.netty.initialSeedUniquifier: 0x466301d132335dae 
+2022-10-30 18:20:29,634 INFO  [TestCase1] Test Execution is working... Feature - User adds product to cart by logging in... 
+2022-10-30 18:20:32,972 INFO  [TestCase1] PASSED - User is on the home page... 
+2022-10-30 18:20:33,158 INFO  [TestCase1] Step 1-User hovers over "Giris Yap veya uye ol" button 
+2022-10-30 18:20:33,391 INFO  [TestCase1] Step 2-User clicks to "Giris Yap" option from opened dropdown menu 
+2022-10-30 18:20:34,137 INFO  [TestCase1] Step 3-User enters email address to input box 
+2022-10-30 18:20:36,321 INFO  [TestCase1] Step 4-User enters password to input box 
+2022-10-30 18:20:37,199 INFO  [TestCase1] Step 5-Verifying... that user is able to log in successfully 
+2022-10-30 18:20:42,083 INFO  [TestCase1] PASSED - User logged in successfully 
+2022-10-30 18:20:42,083 INFO  [TestCase1] Step 6-User enters product name to search box and press enter key 
+2022-10-30 18:20:42,480 INFO  [TestCase1] Step 7-User selects the product 
+2022-10-30 18:20:45,247 INFO  [TestCase1] Step 8-User adds product from two different seller 
+2022-10-30 18:20:49,658 INFO  [TestCase1] Step 9-User clicks "sepete git" button 
+2022-10-30 18:20:52,493 INFO  [TestCase1] Step 10-Verify that correct product has been added correctly to cart 
+2022-10-30 18:20:53,187 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-30 18:20:53,256 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-30 18:20:53,357 INFO  [TestCase1] PASSED - quantity of product is 1 
+2022-10-30 18:20:53,380 INFO  [TestCase1] PASSED - quantity of product is 1 
+2022-10-30 18:20:53,503 INFO  [TestCase1] PASSED - Merchant name different 
+2022-10-30 18:20:53,503 INFO  [TestCase1] Cart cleaning... 
+2022-10-30 18:21:00,871 INFO  [TestCase1] Cart has been cleaned successfully! 
+2022-10-30 18:21:00,876 INFO  [ListenerClass] TEST first_test EXECUTED SUCCESSFULLY! 
+2022-10-30 18:21:00,880 TRACE [WebSocket08FrameEncoder] Encoding WebSocket Frame opCode=8 length=26 
+2022-10-30 18:21:05,776 INFO  [TestCase2] PASSED - User is on the home page... 
+2022-10-30 18:21:06,121 INFO  [TestCase2] Step 1-User enters product name to search box and press enter key 
+2022-10-30 18:21:06,458 INFO  [TestCase2] Step 2-User selects the product 
+2022-10-30 18:21:08,953 INFO  [TestCase2] Step 3-User adds product from two different seller 
+2022-10-30 18:21:15,152 INFO  [TestCase2] Step 4-User clicks "sepete git" button 
+2022-10-30 18:21:21,515 INFO  [TestCase2] Step 5-Verify that correct product has been added correctly to cart 
+2022-10-30 18:21:21,825 INFO  [TestCase2] PASSED - Product name is matching 
+2022-10-30 18:21:21,849 INFO  [TestCase2] PASSED - Product name is matching 
+2022-10-30 18:21:21,860 INFO  [TestCase2] PASSED - Number of total product is correct 
+2022-10-30 18:21:21,899 INFO  [TestCase2] PASSED - quantity of product is 1 
+2022-10-30 18:21:21,909 INFO  [TestCase2] PASSED - quantity of product is 1 
+2022-10-30 18:21:21,945 INFO  [TestCase2] PASSED - Merchant name different 
+2022-10-30 18:21:21,945 INFO  [TestCase2] Cart cleaning... 
+2022-10-30 18:21:31,435 INFO  [TestCase2] Cart has been cleaned successfully! 
+2022-10-30 18:21:31,435 INFO  [ListenerClass] TEST second_test EXECUTED SUCCESSFULLY! 
+2022-10-30 18:21:31,436 TRACE [WebSocket08FrameEncoder] Encoding WebSocket Frame opCode=8 length=26 
+2022-10-30 18:25:15,834 INFO  [TestCase2] PASSED - User is on the home page... 
+2022-10-30 18:25:15,953 INFO  [TestCase2] Step 1-User enters product name to search box and press enter key 
+2022-10-30 18:25:16,084 INFO  [TestCase2] Step 2-User selects the product 
+2022-10-30 18:25:19,321 INFO  [TestCase2] Step 3-User adds product from two different seller 
+2022-10-30 18:25:25,946 INFO  [TestCase2] Step 4-User clicks "sepete git" button 
+2022-10-30 18:25:27,447 INFO  [TestCase2] Step 5-Verify that correct product has been added correctly to cart 
+2022-10-30 18:25:28,082 INFO  [TestCase2] PASSED - Product name is matching 
+2022-10-30 18:25:28,096 INFO  [TestCase2] PASSED - Product name is matching 
+2022-10-30 18:25:28,102 INFO  [TestCase2] PASSED - Number of total product is correct 
+2022-10-30 18:25:28,124 INFO  [TestCase2] PASSED - quantity of product is 1 
+2022-10-30 18:25:28,136 INFO  [TestCase2] PASSED - quantity of product is 1 
+2022-10-30 18:25:28,176 INFO  [TestCase2] PASSED - Merchant name different 
+2022-10-30 18:25:28,176 INFO  [TestCase2] Cart cleaning... 
+2022-10-30 18:25:44,564 INFO  [TestCase2] Cart has been cleaned successfully! 
+2022-10-30 18:25:44,569 TRACE [WebSocket08FrameEncoder] Encoding WebSocket Frame opCode=8 length=26 
+2022-10-30 18:37:07,136 INFO  [ListenerClass] Welcome to the test execution of this web application. I will be testing two scenarios. Please wait, loading... 
+2022-10-30 18:37:09,495 INFO  [TestCase1] Test Execution is working... Feature - User adds product to cart by logging in... 
+2022-10-30 18:37:12,354 INFO  [TestCase1] PASSED - User is on the home page... 
+2022-10-30 18:37:12,505 INFO  [TestCase1] Step 1-User hovers over "Giris Yap veya uye ol" button 
+2022-10-30 18:37:12,719 INFO  [TestCase1] Step 2-User clicks to "Giris Yap" option from opened dropdown menu 
+2022-10-30 18:37:13,677 INFO  [TestCase1] Step 3-User enters email address to input box 
+2022-10-30 18:37:15,750 INFO  [TestCase1] Step 4-User enters password to input box 
+2022-10-30 18:37:16,498 INFO  [TestCase1] Step 5-Verifying... that user is able to log in successfully 
+2022-10-30 18:37:20,957 INFO  [TestCase1] PASSED - User logged in successfully 
+2022-10-30 18:37:20,958 INFO  [TestCase1] Step 6-User enters product name to search box and press enter key 
+2022-10-30 18:37:21,279 INFO  [TestCase1] Step 7-User selects the product 
+2022-10-30 18:37:24,160 INFO  [TestCase1] Step 8-User adds product from two different seller 
+2022-10-30 18:37:28,468 INFO  [TestCase1] Step 9-User clicks "sepete git" button 
+2022-10-30 18:37:31,102 INFO  [TestCase1] Step 10-Verify that correct product has been added correctly to cart 
+2022-10-30 18:37:31,507 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-30 18:37:31,538 INFO  [TestCase1] PASSED - Product name is matching 
+2022-10-30 18:37:31,619 INFO  [TestCase1] PASSED - quantity of product is 1 
+2022-10-30 18:37:31,634 INFO  [TestCase1] PASSED - quantity of product is 1 
+2022-10-30 18:37:31,671 INFO  [TestCase1] PASSED - Merchant name different 
+2022-10-30 18:37:31,671 INFO  [TestCase1] Cart cleaning... 
+2022-10-30 18:37:39,133 INFO  [TestCase1] Cart has been cleaned successfully! 
+2022-10-30 18:37:39,136 INFO  [ListenerClass] TEST first_test EXECUTED SUCCESSFULLY! 
+2022-10-30 18:37:41,120 INFO  [TestCase1] Test Execution is working... Feature - User adds product to cart by logging in... 
+2022-10-30 18:37:43,980 INFO  [TestCase2] PASSED - User is on the home page... 
+2022-10-30 18:37:44,138 INFO  [TestCase2] Step 1-User enters product name to search box and press enter key 
+2022-10-30 18:37:44,429 INFO  [TestCase2] Step 2-User selects the product 
+2022-10-30 18:37:46,915 INFO  [TestCase2] Step 3-User adds product from two different seller 
+2022-10-30 18:37:54,223 INFO  [TestCase2] Step 4-User clicks "sepete git" button 
+2022-10-30 18:38:00,434 INFO  [TestCase2] Step 5-Verify that correct product has been added correctly to cart 
+2022-10-30 18:38:00,823 INFO  [TestCase2] PASSED - Product name is matching 
+2022-10-30 18:38:00,857 INFO  [TestCase2] PASSED - Product name is matching 
+2022-10-30 18:38:00,893 INFO  [TestCase2] PASSED - Number of total product is correct 
+2022-10-30 18:38:00,956 INFO  [TestCase2] PASSED - quantity of product is 1 
+2022-10-30 18:38:01,029 INFO  [TestCase2] PASSED - quantity of product is 1 
+2022-10-30 18:38:01,141 INFO  [TestCase2] PASSED - Merchant name different 
+2022-10-30 18:38:01,141 INFO  [TestCase2] Cart cleaning... 
+2022-10-30 18:38:10,492 INFO  [TestCase2] Cart has been cleaned successfully! 
+2022-10-30 18:38:10,492 INFO  [ListenerClass] TEST second_test EXECUTED SUCCESSFULLY! 
+2022-10-30 18:39:29,095 INFO  [ListenerClass] Welcome to the test execution of this web application. I will be testing two scenarios. Please wait, loading... 
+2022-10-30 18:39:31,477 INFO  [TestCase1] Test Execution is working... Feature - User adds product to cart by logging in... 
+2022-10-30 18:39:34,645 INFO  [TestCase1] PASSED - User is on the home page... 
+2022-10-30 18:39:34,654 ERROR [ListenerClass] TESTfirst_testFAILED! 
+2022-10-30 18:39:36,617 INFO  [TestCase1] Test Execution is working... Feature - User adds product to cart by logging in... 
+2022-10-30 18:39:39,653 INFO  [TestCase2] PASSED - User is on the home page... 
+2022-10-30 18:39:39,832 INFO  [TestCase2] Step 1-User enters product name to search box and press enter key 
+2022-10-30 18:39:39,964 INFO  [TestCase2] Step 2-User selects the product 
+2022-10-30 18:39:42,539 INFO  [TestCase2] Step 3-User adds product from two different seller 
+2022-10-30 18:39:48,734 INFO  [TestCase2] Step 4-User clicks "sepete git" button 
+2022-10-30 18:39:49,371 INFO  [TestCase2] Step 5-Verify that correct product has been added correctly to cart 
+2022-10-30 18:39:50,068 INFO  [TestCase2] PASSED - Product name is matching 
+2022-10-30 18:39:50,093 INFO  [TestCase2] PASSED - Product name is matching 
+2022-10-30 18:39:50,111 INFO  [TestCase2] PASSED - Number of total product is correct 
+2022-10-30 18:39:50,162 INFO  [TestCase2] PASSED - quantity of product is 1 
+2022-10-30 18:39:50,205 INFO  [TestCase2] PASSED - quantity of product is 1 
+2022-10-30 18:39:50,438 INFO  [TestCase2] PASSED - Merchant name different 
+2022-10-30 18:39:50,438 INFO  [TestCase2] Cart cleaning... 
+2022-10-30 18:39:59,921 INFO  [TestCase2] Cart has been cleaned successfully! 
+2022-10-30 18:39:59,921 INFO  [ListenerClass] TEST second_test EXECUTED SUCCESSFULLY! 
