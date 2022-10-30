@@ -11,7 +11,7 @@ public class ListenerClass extends TestListenerAdapter {
     @Override
     public void onTestSuccess(ITestResult tr) {
         super.onTestSuccess(tr);
-        logLog.info("TEST " + tr.getName() + " EXECUTED SUCCESSFULLY!");
+        logLog.info("TEST that named " + tr.getName() + " EXECUTED SUCCESSFULLY!");
     }
 
     @Override
@@ -21,18 +21,14 @@ public class ListenerClass extends TestListenerAdapter {
     }
 
     @Override
-    public void onTestSkipped(ITestResult tr) {
-        super.onTestSkipped(tr);
-    }
-
-    @Override
     public void onStart(ITestContext testContext) {
-
         super.onStart(testContext);
+        logLog.info("Welcome to the test execution of this web application. I will be testing two scenarios. Please wait, loading...");
     }
 
     @Override
     public void onFinish(ITestContext testContext) {
         super.onFinish(testContext);
+        logLog.info("FINISHED...");
     }
 }
