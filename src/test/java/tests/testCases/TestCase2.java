@@ -16,11 +16,11 @@ import java.time.Duration;
 
 public class TestCase2 extends TestBase {
 
+    //Feature : add product to cart without by logging in
     @Test
     public void second_test() {
 
-        //1-User navigates to home page
-        driver.get("https://www.hepsiburada.com/");
+        //I create page object to be able to call elements from these class
         HomePage homePage = new HomePage(driver);
 
         ProductListPage productListPage = new ProductListPage(driver);
@@ -30,13 +30,28 @@ public class TestCase2 extends TestBase {
         CartPage cartPage = new CartPage(driver);
 
         LoginPage loginPage = new LoginPage(driver);
+        //-----------------------------------------------------------------
 
+        //I created wait object if I face with any delaying
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        //-----------------------------------------------------------------
 
-        LogLog logLog = new LogLog();
-
+        //I used actions class to implement hover action for now
         Actions actions = new Actions(driver);
+        //------------------------------------------------------------------
 
+        //I created this object to reach Loglog class
+        LogLog logLog = new LogLog();
+        //------------------------------------------------------------------
+
+        //to clarify method and class names I use detailed log
+        logLog.info2("Test Execution is working... Feature - User adds product to cart without by logging in...");
+
+        /////////////////////////////////////////////////////////////////////
+        ///////////////////////PART OF TEST STEPS////////////////////////////
+        /////////////////////////////////////////////////////////////////////
+        //1-User navigates to home page
+        driver.get("https://www.hepsiburada.com/");
         String expectedResult = "Türkiye'nin En Büyük Online Alışveriş Sitesi Hepsiburada.com";
         String actualResult = driver.getTitle();
         Assert.assertEquals(expectedResult, actualResult);
@@ -45,33 +60,35 @@ public class TestCase2 extends TestBase {
         } else {
             logLog.error2("FAILED - User is not on home page.");
         }
-        //logger.info2("precondition is ending...");
 
         //2-user accepts cookies
         wait.until(ExpectedConditions.visibilityOf(homePage.cookiesAcceptButton));
         homePage.cookiesAcceptButton.click();
+        //------------------------------------------------------------------
 
         //3-User enters product name to search box and press enter key
         logLog.info2("Step 1-User enters product name to search box and press enter key");
         String productName = "Yeni Başlayanlar İçin Java 10";
         homePage.searchBox.sendKeys(productName + Keys.ENTER);
+        //------------------------------------------------------------------
 
         //4-User selects the product
         logLog.info2("Step 2-User selects the product");
         productListPage.productLink.click();
+        //------------------------------------------------------------------
 
         //5-User adds product from two different seller
         logLog.info2("Step 3-User adds product from two different seller");
         Browser.switchWindow(driver, productName);
-
         for (WebElement eachSellerAddButton : productPage.sellerAddButtons) {
             eachSellerAddButton.click();
             Browser.sleep(2);
         }
+        //------------------------------------------------------------------
 
         //6-User clicks "sepete git" button
         logLog.info2("Step 4-User clicks \"sepete git\" button");
-        //if there is no "sepete git button" clicks to "sepetim"
+        //if there is no "sepete git button" click to "sepetim"
         try {
             wait.until(ExpectedConditions.visibilityOf(productPage.sepeteGitButton));
             productPage.sepeteGitButton.click();
@@ -82,9 +99,10 @@ public class TestCase2 extends TestBase {
 
         //7-Verify that correct product has been added correctly to cart
         logLog.info2("Step 5-Verify that correct product has been added correctly to cart");
+        //Product name should be same =====================================================
         for (WebElement eachProductLink : cartPage.productLinks) {
             if (!eachProductLink.getText().contains(productName)) {
-                logLog.error1("Product name is not matching it might be different product check it");
+                logLog.error2("Product name is not matching it might be different product check it");
                 //Even if I face with accident to be able to continue I use try-catch
                 try {
                     Assert.assertTrue(false, "Product name is not matching it might be different product check it");
@@ -93,28 +111,16 @@ public class TestCase2 extends TestBase {
                 }
 
             } else {
-                logLog.info1("PASSED - Product name is matching");
+                logLog.info2("PASSED - Product name is matching");
                 Assert.assertTrue(true);
             }
         }
 
-        if (cartPage.productLinks.size() != 2) {
-            logLog.error1("Number of total product is not correct, check it.");
-            try {
-                Assert.assertTrue(false, "Number of total product should be 2 pcs. check it please.");
-            }catch (AssertionError e){
-
-            }
-
-        } else {
-            logLog.info1("PASSED - Number of total product is correct");
-            Assert.assertTrue(true);
-        }
-
+        //Number of product should be 1 pcs. ==============================================
         for (WebElement eachProductQuantity : cartPage.quantityOfProduct) {
             String quantityOfProduct = eachProductQuantity.getAttribute("value");
             if (!quantityOfProduct.equals("1")) {
-                logLog.error1("quantity of product is not 1");
+                logLog.error2("quantity of product is not 1");
                 try {
                     Assert.assertTrue(false, "quantity of product is not 1");
                 }catch (AssertionError e){
@@ -122,25 +128,29 @@ public class TestCase2 extends TestBase {
                 }
 
             } else {
-                logLog.info1("PASSED - quantity of product is 1");
+                logLog.info2("PASSED - quantity of product is 1");
             }
         }
-
+        //Merchant name should be different ================================================
         String firstMerchantName = cartPage.merchantLinks.get(0).getText();
         String secondMerchantName = cartPage.merchantLinks.get(1).getText();
         if (firstMerchantName.equals(secondMerchantName)){
-            logLog.error1("FAILED - Merchant name should be different");
+            logLog.error2("FAILED - Merchant name should be different");
         }else {
-            logLog.info1("PASSED - Merchant name different");
+            logLog.info2("PASSED - Merchant name different");
         }
         try {
             Assert.assertFalse(firstMerchantName.equals(secondMerchantName));
         }catch (AssertionError e){
 
         }
+        //------------------------------------------------------------------
+        /////////////////////////////////////////////////////////////////////
+        ///////////////////////END OF TEST STEPS////////////////////////////
+        /////////////////////////////////////////////////////////////////////
 
         //This loop for cleaning the cart
-        logLog.info1("Cart cleaning...");
+        logLog.info2("Cart cleaning...");
 
         actions.moveToElement(cartPage.deleteAllLine).perform();
         while (true) {
@@ -154,7 +164,6 @@ public class TestCase2 extends TestBase {
             Browser.sleep(2);
         }
         logLog.info2("Cart has been cleaned successfully!");
-
 
     }
 }

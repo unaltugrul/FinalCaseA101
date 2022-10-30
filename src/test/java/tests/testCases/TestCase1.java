@@ -45,9 +45,13 @@ public class TestCase1 extends TestBase {
         //I created this object to reach Loglog class
         LogLog logLog = new LogLog();
         //------------------------------------------------------------------
+
         //to clarify method and class names I use detailed log
         logLog.info1("Test Execution is working... Feature - User adds product to cart by logging in...");
 
+        /////////////////////////////////////////////////////////////////////
+        ///////////////////////PART OF TEST STEPS////////////////////////////
+        /////////////////////////////////////////////////////////////////////
         //1-User navigates to "https://www.hepsiburada.com/" web page
         driver.get("https://www.hepsiburada.com/");
         String expectedResult = "Türkiye'nin En Büyük Online Alışveriş Sitesi Hepsiburada.com";
@@ -125,7 +129,7 @@ public class TestCase1 extends TestBase {
 
         //9-User clicks "sepete git" button
         logLog.info1("Step 9-User clicks \"sepete git\" button");
-        //if there is no "sepete git button" clicks to "sepetim"
+        //if there is no "sepete git button" click to "sepetim"
         try {
             wait.until(ExpectedConditions.visibilityOf(productPage.sepeteGitButton));
             productPage.sepeteGitButton.click();
@@ -182,6 +186,9 @@ public class TestCase1 extends TestBase {
 
         }
         //------------------------------------------------------------------
+        /////////////////////////////////////////////////////////////////////
+        ///////////////////////END OF TEST STEPS////////////////////////////
+        /////////////////////////////////////////////////////////////////////
 
         //This loop for cleaning the cart
         logLog.info1("Cart cleaning...");
