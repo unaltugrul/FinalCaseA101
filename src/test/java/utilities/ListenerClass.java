@@ -5,14 +5,14 @@ import org.testng.ITestNGMethod;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
 
-//I created this class for logging failed and success test executions
+//I created this class for logging failed and success test executions also
 public class ListenerClass extends TestListenerAdapter {
 
     LogLog logLog = new LogLog();
     @Override
     public void onTestSuccess(ITestResult tr) {
         super.onTestSuccess(tr);
-        logLog.info("TEST that named " + tr.getName() + " EXECUTED SUCCESSFULLY!");
+        logLog.info("TEST that named <- " + tr.getName() + " -> EXECUTED SUCCESSFULLY!");
     }
 
     @Override
