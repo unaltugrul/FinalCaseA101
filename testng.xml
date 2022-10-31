@@ -1,26 +1,30 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Log Suite Example" verbose="1">
+<!--<suite name="Log Suite Example" verbose="1">-->
+    <suite name="Parallel Processing" parallel="classes" thread-count="2" verbose="3">
     <listeners>
         <listener class-name="utilities.ListenerClass" />
     </listeners>
 
-    <test name="TestNG logs sample" preserve-order="true">
+    <test name="Parallel Processing">
         <classes>
-            <class name="tests.testCases.TestCase1">
-                <methods>
-                    <include name="first_test" />
-                </methods>
-            </class>
-            <class name="tests.testCases.TestCase2">
-                <methods>
-                    <include name="second_test" />
-                </methods>
-            </class>
+            <class name="tests.testCases.TestCase1"></class>
+            <class name="tests.testCases.TestCase2"></class>
         </classes>
     </test>
 
+    <!-- <test name="TestNG logs sample" preserve-order="true">
+     <classes>
+         <class name="tests.testCases.TestCase1">
+             <methods>
+                 <include name="first_test" />
+             </methods>
+         </class>
+         <class name="tests.testCases.TestCase2">
+             <methods>
+                 <include name="second_test" />
+             </methods>
+         </class>
+     </classes>
+ </test>-->
 
 </suite>
-
-        <!--this file to run my suits with listener class -->
-
