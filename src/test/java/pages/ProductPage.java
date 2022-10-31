@@ -15,11 +15,6 @@ public class ProductPage extends BasePage{
         PageFactory.initElements(driver,this);
     }
 
-    public ProductPage(){
-
-    }
-
-
     //"sepete ekle" buttons for every seller
     @FindBy(xpath = "//button[@class='add-to-basket button small']")
     public List<WebElement> sellerAddButtons;

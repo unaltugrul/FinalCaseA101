@@ -50,6 +50,7 @@ public class TestCase2 extends TestBase {
         /////////////////////////////////////////////////////////////////////
         ///////////////////////PART OF TEST STEPS////////////////////////////
         /////////////////////////////////////////////////////////////////////
+
         //1-User navigates to home page
         driver.get("https://www.hepsiburada.com/");
         String expectedResult = "Türkiye'nin En Büyük Online Alışveriş Sitesi Hepsiburada.com";
@@ -93,7 +94,7 @@ public class TestCase2 extends TestBase {
             wait.until(ExpectedConditions.visibilityOf(productPage.sepeteGitButton));
             productPage.sepeteGitButton.click();
 
-        }catch (Exception e){
+        } catch (Exception e) {
             productPage.sepetimButton.click();
         }
 
@@ -106,7 +107,7 @@ public class TestCase2 extends TestBase {
                 //Even if I face with accident to be able to continue I use try-catch
                 try {
                     Assert.assertTrue(false, "Product name is not matching it might be different product check it");
-                }catch (AssertionError e){
+                } catch (AssertionError e) {
 
                 }
 
@@ -123,7 +124,7 @@ public class TestCase2 extends TestBase {
                 logLog.error2("quantity of product is not 1");
                 try {
                     Assert.assertTrue(false, "quantity of product is not 1");
-                }catch (AssertionError e){
+                } catch (AssertionError e) {
 
                 }
 
@@ -134,14 +135,14 @@ public class TestCase2 extends TestBase {
         //Merchant name should be different ================================================
         String firstMerchantName = cartPage.merchantLinks.get(0).getText();
         String secondMerchantName = cartPage.merchantLinks.get(1).getText();
-        if (firstMerchantName.equals(secondMerchantName)){
+        if (firstMerchantName.equals(secondMerchantName)) {
             logLog.error2("FAILED - Merchant name should be different");
-        }else {
+        } else {
             logLog.info2("PASSED - Merchant name different");
         }
         try {
             Assert.assertFalse(firstMerchantName.equals(secondMerchantName));
-        }catch (AssertionError e){
+        } catch (AssertionError e) {
 
         }
         //------------------------------------------------------------------

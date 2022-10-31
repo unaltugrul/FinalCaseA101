@@ -15,9 +15,7 @@ public class HomePage extends BasePage{
         PageFactory.initElements(driver,this);
     }
 
-    public HomePage(){
-
-    }
+    //cookies
     @FindBy(xpath = "//div[@class='ot-sdk-row']//button[@id='onetrust-accept-btn-handler']")
     public WebElement cookiesAcceptButton;
 

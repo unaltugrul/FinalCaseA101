@@ -13,11 +13,6 @@ public class LoginPage extends BasePage{
         PageFactory.initElements(driver,this);
     }
 
-    public LoginPage(){
-
-    }
-
-
     @FindBy(xpath = "//input[@name='username']")
     public WebElement emailInputBox;
 

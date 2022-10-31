@@ -14,11 +14,6 @@ public class ProductListPage {
         PageFactory.initElements(driver,this);
     }
 
-    public ProductListPage(){
-
-    }
-
-
     @FindBy(xpath = "//li[@id='i0']//a[1]")
     public WebElement productLink;
 

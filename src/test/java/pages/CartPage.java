@@ -15,10 +15,6 @@ public class CartPage {
         PageFactory.initElements(driver,this);
     }
 
-    public CartPage(){
-
-    }
-
     //product links in chart
     @FindBy(xpath = "//div[contains(@class,'product_name')]//a")
     public List<WebElement> productLinks;
@@ -31,6 +27,7 @@ public class CartPage {
     @FindBy(name = "quantity")
     public List<WebElement> quantityOfProduct;
 
+    //delete all line by hovering over on this element
     @FindBy(xpath = "//div[contains(@class,'hover')]//a[1]")
     public WebElement deleteAllLine;
 

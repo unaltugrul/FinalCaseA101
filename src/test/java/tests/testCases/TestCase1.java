@@ -16,11 +16,9 @@ import java.time.Duration;
 
 public class TestCase1 extends TestBase {
 
-
-
     //Feature : add product to cart by logging in
     @Test
-    public void first_test(){
+    public void first_test() {
 
         //I create page object to be able to call elements from these class
         HomePage homePage = new HomePage(driver);
@@ -52,6 +50,7 @@ public class TestCase1 extends TestBase {
         /////////////////////////////////////////////////////////////////////
         ///////////////////////PART OF TEST STEPS////////////////////////////
         /////////////////////////////////////////////////////////////////////
+
         //1-User navigates to "https://www.hepsiburada.com/" web page
         driver.get("https://www.hepsiburada.com/");
         String expectedResult = "Türkiye'nin En Büyük Online Alışveriş Sitesi Hepsiburada.com";
@@ -63,7 +62,7 @@ public class TestCase1 extends TestBase {
         }
         try {
             Assert.assertEquals(expectedResult, actualResult);
-        }catch (Exception e){
+        } catch (Exception e) {
 
         }
         //------------------------------------------------------------------
@@ -134,7 +133,7 @@ public class TestCase1 extends TestBase {
             wait.until(ExpectedConditions.visibilityOf(productPage.sepeteGitButton));
             productPage.sepeteGitButton.click();
 
-        }catch (Exception e){
+        } catch (Exception e) {
             productPage.sepetimButton.click();
         }
         //------------------------------------------------------------------
@@ -148,7 +147,7 @@ public class TestCase1 extends TestBase {
                 //Even if I face with accident to be able to continue I use try-catch\ I want to see the problem on log file later on
                 try {
                     Assert.assertTrue(false, "Product name is not matching it might be different product check it");
-                }catch (AssertionError e){
+                } catch (AssertionError e) {
 
                 }
             } else {
@@ -164,7 +163,7 @@ public class TestCase1 extends TestBase {
                 logLog.error1("quantity of product is not 1");
                 try {
                     Assert.assertTrue(false, "quantity of product is not 1");
-                }catch (AssertionError e){
+                } catch (AssertionError e) {
 
                 }
 
@@ -175,14 +174,14 @@ public class TestCase1 extends TestBase {
         //Merchant name should be different ================================================
         String firstMerchantName = cartPage.merchantLinks.get(0).getText();
         String secondMerchantName = cartPage.merchantLinks.get(1).getText();
-        if (firstMerchantName.equals(secondMerchantName)){
+        if (firstMerchantName.equals(secondMerchantName)) {
             logLog.error1("FAILED - Merchant name should be different");
-        }else {
+        } else {
             logLog.info1("PASSED - Merchant name different");
         }
         try {
             Assert.assertFalse(firstMerchantName.equals(secondMerchantName));
-        }catch (AssertionError e){
+        } catch (AssertionError e) {
 
         }
         //------------------------------------------------------------------
