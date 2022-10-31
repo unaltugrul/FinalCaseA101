@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <!--<suite name="Log Suite Example" verbose="1">-->
-    <suite name="Parallel Processing" parallel="classes" thread-count="2" verbose="3">
+    <suite name="Parallel Processing" parallel="methods" preserve-order="true" thread-count="2">
     <listeners>
         <listener class-name="utilities.ListenerClass" />
     </listeners>
