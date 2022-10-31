@@ -1,0 +1,24 @@
+TestCase1
+Feature : add product to cart by logging in
+1-User navigates to "https://www.hepsiburada.com/" web page
+2-user accepts cookies
+3-User hovers over "Giris Yap veya uye ol" button
+4-User clicks to "Giris Yap" option from opened dropdown menu
+5-User enters email address to input box
+6-User enters password to input box and press to enter key
+7-Verify that user is able to log in successfully
+8-User enters product name to search box and press enter key
+9-User selects the product
+10-User adds product from two different seller
+11-User clicks "sepete git" button
+12-Verify that correct product has been added correctly to cart
+
+TestCase2
+Feature : add product to cart without by logging in
+1-User navigates to home page
+2-user accepts cookies
+3-User enters product name to search box and press enter key
+4-User selects the product
+5-User adds product from two different seller
+6-User clicks "sepete git" button
+7-Verify that correct product has been added correctly to cart
