@@ -22,7 +22,8 @@ public abstract class TestBase {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-notifications");
         options.addArguments("--disable-blink-features=AutomationControlled");
-        options.addArguments("--disable-dev-shm-usage");
+        //options.addArguments("--disable-dev-shm-usage");
+        //options.addArguments("--disable-web-security");
         WebDriverManager.chromedriver().setup();
         driver=new ChromeDriver(options);
         driver.manage().window().maximize();
