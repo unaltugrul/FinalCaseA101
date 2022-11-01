@@ -12,15 +12,9 @@ public abstract class BasePage {
     //driver instance, I am going to assign this driver to this page for every cycle
     WebDriver driver;
 
-    //constructor to give first value and to initialize driver with PageFactory Class
-    public BasePage(WebDriver driver){
-        this.driver=driver;
-        PageFactory.initElements(driver,this);
-    }
-
     //empty constructor to trigger this class while finding for every element
     public BasePage(){
-
+        PageFactory.initElements(driver,this);
     }
 
 
