@@ -44,4 +44,7 @@ public abstract class BasePage {
     @FindBy(xpath = "//span[@id='shoppingCart']/..")
     public WebElement sepetimButton;
 
+    @FindBy(id = "cartItemCount")
+    public WebElement cartItemCount;
+
 }
