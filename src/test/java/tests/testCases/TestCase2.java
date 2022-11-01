@@ -67,6 +67,24 @@ public class TestCase2 extends TestBase {
         homePage.cookiesAcceptButton.click();
         //------------------------------------------------------------------
 
+        //Special method---Check if there is any product in cart clean it and continue
+        if (!homePage.cartItemCount.getText().equals("0")) {
+            homePage.sepetimButton.click();
+            actions.moveToElement(cartPage.deleteAllLine).perform();
+            while (true) {
+                try {
+                    if (cartPage.deleteAllLine.isDisplayed()) {
+                        cartPage.deleteAllLine.click();
+                    }
+                } catch (Exception e) {
+                    break;
+                }
+
+                Browser.sleep(1);
+            }
+        }
+        ///////////////////////////////////////////////////////////////////////////////
+
         //3-User enters product name to search box and press enter key
         logLog.info2("Step 1-User enters product name to search box and press enter key");
         String productName = "Yeni Başlayanlar İçin Java 10";

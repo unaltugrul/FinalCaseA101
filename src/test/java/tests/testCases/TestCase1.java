@@ -107,6 +107,23 @@ public class TestCase1 extends TestBase {
         }catch (Exception e){
 
         }
+        //Special method---Check if there is any product in cart clean it and continue
+        if (!homePage.cartItemCount.getText().equals("0")){
+            homePage.sepetimButton.click();
+            actions.moveToElement(cartPage.deleteAllLine).perform();
+            while (true) {
+                try {
+                    if (cartPage.deleteAllLine.isDisplayed()) {
+                        cartPage.deleteAllLine.click();
+                    }
+                } catch (Exception e) {
+                    break;
+                }
+
+                Browser.sleep(1);
+            }
+        }
+        ///////////////////////////////////////////////////////////////////////////////
         //------------------------------------------------------------------
 
         //8-User enters product name to search box and press enter key
@@ -210,7 +227,5 @@ public class TestCase1 extends TestBase {
 
     }
 
-
-    //mvn clean test -DsuiteXmlFile=testng.xml
 
 }
