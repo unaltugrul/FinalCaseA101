@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class ProductPage extends BasePage{
+public class ProductPage {
     WebDriver driver;
 
     public ProductPage(WebDriver driver){

@@ -21,6 +21,8 @@ public class TestCase2 extends TestBase {
     public void second_test() {
 
         //I create page object to be able to call elements from these class
+        BasePage basePage = new BasePage(driver);
+
         HomePage homePage = new HomePage(driver);
 
         ProductListPage productListPage = new ProductListPage(driver);
@@ -68,8 +70,8 @@ public class TestCase2 extends TestBase {
         //------------------------------------------------------------------
 
         //Special method---Check if there is any product in cart clean it and continue
-        if (!homePage.cartItemCount.getText().equals("0")) {
-            homePage.sepetimButton.click();
+        if (!basePage.cartItemCount.getText().equals("0")) {
+            basePage.sepetimButton.click();
             actions.moveToElement(cartPage.deleteAllLine).perform();
             while (true) {
                 try {
@@ -88,7 +90,7 @@ public class TestCase2 extends TestBase {
         //3-User enters product name to search box and press enter key
         logLog.info2("Step 1-User enters product name to search box and press enter key");
         String productName = "Yeni Başlayanlar İçin Java 10";
-        homePage.searchBox.sendKeys(productName + Keys.ENTER);
+        basePage.searchBox.sendKeys(productName + Keys.ENTER);
         //------------------------------------------------------------------
 
         //4-User selects the product
@@ -113,7 +115,7 @@ public class TestCase2 extends TestBase {
             productPage.sepeteGitButton.click();
 
         } catch (Exception e) {
-            productPage.sepetimButton.click();
+            basePage.sepetimButton.click();
         }
 
         //7-Verify that correct product has been added correctly to cart

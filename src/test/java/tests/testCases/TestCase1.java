@@ -21,6 +21,8 @@ public class TestCase1 extends TestBase {
     public void first_test() {
 
         //I create page object to be able to call elements from these class
+        BasePage basePage = new BasePage(driver);
+
         HomePage homePage = new HomePage(driver);
 
         ProductListPage productListPage = new ProductListPage(driver);
@@ -74,12 +76,12 @@ public class TestCase1 extends TestBase {
 
         //3-User hovers over "Giris Yap veya uye ol" button
         logLog.info1("Step 1-User hovers over \"Giris Yap veya uye ol\" button");
-        actions.moveToElement(homePage.girisYapDropdown).perform();
+        actions.moveToElement(basePage.girisYapDropdown).perform();
         //------------------------------------------------------------------
 
         //4-User clicks to "Giris Yap" option from opened dropdown menu
         logLog.info1("Step 2-User clicks to \"Giris Yap\" option from opened dropdown menu");
-        homePage.girisYapOption.click();
+        basePage.girisYapOption.click();
         //------------------------------------------------------------------
 
         //5-User enters email address to input box
@@ -95,7 +97,7 @@ public class TestCase1 extends TestBase {
         //7-Verify that user is able to log in successfully
         logLog.info1("Step 5-Verifying... that user is able to log in successfully");
         String exceptedText = "Hesabım";
-        String actualText = homePage.hesabimDropdown.getAttribute("title");
+        String actualText = basePage.hesabimDropdown.getAttribute("title");
         //this condition to commit this verification to log file
         if (exceptedText.equals(actualText)) {
             logLog.info1("PASSED - User logged in successfully");
@@ -108,8 +110,8 @@ public class TestCase1 extends TestBase {
 
         }
         //Special method---Check if there is any product in cart clean it and continue
-        if (!homePage.cartItemCount.getText().equals("0")){
-            homePage.sepetimButton.click();
+        if (!basePage.cartItemCount.getText().equals("0")){
+            basePage.sepetimButton.click();
             actions.moveToElement(cartPage.deleteAllLine).perform();
             while (true) {
                 try {
@@ -129,7 +131,7 @@ public class TestCase1 extends TestBase {
         //8-User enters product name to search box and press enter key
         logLog.info1("Step 6-User enters product name to search box and press enter key");
         String productName = "Yeni Başlayanlar İçin Java 10";
-        homePage.searchBox.sendKeys(productName + Keys.ENTER);
+        basePage.searchBox.sendKeys(productName + Keys.ENTER);
         //------------------------------------------------------------------
 
         //9-User selects the product
@@ -154,7 +156,7 @@ public class TestCase1 extends TestBase {
             productPage.sepeteGitButton.click();
 
         } catch (Exception e) {
-            productPage.sepetimButton.click();
+            basePage.sepetimButton.click();
         }
         //------------------------------------------------------------------
 

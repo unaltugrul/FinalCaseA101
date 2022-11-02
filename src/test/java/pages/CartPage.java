@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class CartPage extends BasePage {
+public class CartPage {
     WebDriver driver;
 
     public CartPage(WebDriver driver){

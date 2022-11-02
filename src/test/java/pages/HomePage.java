@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 //inherited from BasePage
-public class HomePage extends BasePage{
+public class HomePage {
 
     WebDriver driver;
 
