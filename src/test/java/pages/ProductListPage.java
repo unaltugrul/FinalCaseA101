@@ -5,16 +5,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class ProductListPage {
+public class ProductListPage extends BasePage{
 
-    WebDriver driver;
-
-    public ProductListPage(WebDriver driver){
-        this.driver=driver;
-        PageFactory.initElements(driver,this);
+    public ProductListPage(WebDriver driver) {
+        super(driver);
     }
-
     @FindBy(xpath = "//li[@id='i0']//a[1]")
     public WebElement productLink;
+
 
 }

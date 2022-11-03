@@ -8,14 +8,11 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class CartPage {
-    WebDriver driver;
+public class CartPage extends BasePage {
 
-    public CartPage(WebDriver driver){
-        this.driver=driver;
-        PageFactory.initElements(driver,this);
+    public CartPage(WebDriver driver) {
+        super(driver);
     }
-
     //product links in chart
     @FindBy(xpath = "//div[contains(@class,'product_name')]//a")
     public List<WebElement> productLinks;
@@ -31,6 +28,7 @@ public class CartPage {
     //delete all line by hovering over on this element
     @FindBy(xpath = "//div[contains(@class,'hover')]//a[1]")
     public WebElement deleteAllLine;
+
 
 
 }

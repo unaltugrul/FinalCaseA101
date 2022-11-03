@@ -11,11 +11,8 @@ import java.util.concurrent.TimeUnit;
 
 
 public abstract class TestBase {
-    // abstract yaparak bu class'dan obje olusturulmasinin onune geceriz
-    protected WebDriver driver;
-    // biz test base class'i sadece extends ile inherit ederek kullanacagiz
-    // dolayisiyla olusturdugumuz driver variable'i icin protected access modifier'i seciyoruz
 
+    protected WebDriver driver;
 
     @BeforeClass
     public void setup(){
@@ -28,6 +25,7 @@ public abstract class TestBase {
         driver=new ChromeDriver(options);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+
     }
 
 

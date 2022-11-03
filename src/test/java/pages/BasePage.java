@@ -13,8 +13,8 @@ public class BasePage {
     WebDriver driver;
 
     //constructor to trigger this class while finding for every element
-    public BasePage(WebDriver driver){
-        this.driver=driver;
+    public BasePage(WebDriver driver) {
+        this.driver = driver;
         PageFactory.initElements(driver,this);
     }
 
