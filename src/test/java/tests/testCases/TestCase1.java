@@ -106,23 +106,20 @@ public class TestCase1 extends TestBase {
         }
         try {
             Assert.assertEquals(actualText, exceptedText);
-        }catch (Exception e){
+        } catch (Exception e) {
 
         }
         //Special method---Check if there is any product in cart clean it and continue
-        if (!basePage.cartItemCount.getText().equals("0")){
+        if (!basePage.cartItemCount.getText().equals("0")) {
             basePage.myCartButton.click();
             actions.moveToElement(cartPage.deleteAllLine).perform();
             while (true) {
                 try {
-                    if (cartPage.deleteAllLine.isDisplayed()) {
-                        cartPage.deleteAllLine.click();
-                    }
+                    actions.moveToElement(cartPage.deleteAllLine).perform();
+                    cartPage.deleteAllLine.click();
                 } catch (Exception e) {
                     break;
                 }
-
-                Browser.sleep(1);
             }
         }
         ///////////////////////////////////////////////////////////////////////////////
@@ -207,7 +204,7 @@ public class TestCase1 extends TestBase {
             } catch (AssertionError e) {
 
             }
-        }catch (Exception e){
+        } catch (Exception e) {
 
         }
 
@@ -221,14 +218,11 @@ public class TestCase1 extends TestBase {
         actions.moveToElement(cartPage.deleteAllLine).perform();
         while (true) {
             try {
-                if (cartPage.deleteAllLine.isDisplayed()) {
-                    cartPage.deleteAllLine.click();
-                }
+                actions.moveToElement(cartPage.deleteAllLine).perform();
+                cartPage.deleteAllLine.click();
             } catch (Exception e) {
                 break;
             }
-
-            Browser.sleep(1);
         }
         logLog.info1("Cart has been cleaned successfully!");
 
