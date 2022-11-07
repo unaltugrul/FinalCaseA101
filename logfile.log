@@ -9765,3 +9765,41 @@ java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent
 2022-11-07 15:04:35,334 INFO  [TestCase1] Cart has been cleaned successfully! 
 2022-11-07 15:04:35,335 INFO  [ListenerClass] TEST that named <- first_test -> EXECUTED SUCCESSFULLY! 
 2022-11-07 15:04:36,013 INFO  [ListenerClass] FINISHED... 
+2022-11-07 17:51:42,868 INFO  [ListenerClass] Welcome to the test execution of this web application. I will be testing two scenarios. Please wait, loading... 
+2022-11-07 17:51:45,992 INFO  [TestCase1] Test Execution is working... Feature - User adds product to cart by logging in... 
+2022-11-07 17:51:45,994 INFO  [TestCase2] Test Execution is working... Feature - User adds product to cart without by logging in... 
+2022-11-07 17:51:49,764 INFO  [TestCase2] PASSED - User is on the home page... 
+2022-11-07 17:51:49,832 INFO  [TestCase1] PASSED - User is on the home page... 
+2022-11-07 17:51:49,959 INFO  [TestCase1] Step 1-User hovers over "Giris Yap veya uye ol" button 
+2022-11-07 17:51:50,383 INFO  [TestCase1] Step 2-User clicks to "Giris Yap" option from opened dropdown menu 
+2022-11-07 17:51:50,962 INFO  [TestCase1] Step 3-User enters email address to input box 
+2022-11-07 17:51:52,856 INFO  [TestCase1] Step 4-User enters password to input box 
+2022-11-07 17:51:54,141 INFO  [TestCase1] Step 5-Verifying... that user is able to log in successfully 
+2022-11-07 17:51:55,109 INFO  [TestCase2] Step 1-User enters product name to search box and press enter key 
+2022-11-07 17:51:55,294 INFO  [TestCase2] Step 2-User selects the product 
+2022-11-07 17:51:58,338 INFO  [TestCase1] PASSED - User logged in successfully 
+2022-11-07 17:51:58,796 INFO  [TestCase2] Step 3-User adds product from two different seller 
+2022-11-07 17:52:01,035 INFO  [TestCase1] Step 6-User enters product name to search box and press enter key 
+2022-11-07 17:52:01,224 INFO  [TestCase1] Step 7-User selects the product 
+2022-11-07 17:52:04,019 INFO  [TestCase1] Step 8-User adds product from two different seller 
+2022-11-07 17:52:05,861 INFO  [TestCase2] Step 4-User clicks "sepete git" button 
+2022-11-07 17:52:08,908 INFO  [TestCase1] Step 9-User clicks "sepete git" button 
+2022-11-07 17:52:10,893 INFO  [TestCase1] Step 10-Verify that correct product has been added correctly to cart 
+2022-11-07 17:52:11,513 INFO  [TestCase1] PASSED - Product name is matching 
+2022-11-07 17:52:11,579 INFO  [TestCase1] PASSED - Product name is matching 
+2022-11-07 17:52:11,665 INFO  [TestCase1] PASSED - quantity of product is 1 
+2022-11-07 17:52:11,824 INFO  [TestCase1] PASSED - quantity of product is 1 
+2022-11-07 17:52:11,871 INFO  [TestCase1] PASSED - Merchant name different 
+2022-11-07 17:52:11,871 INFO  [TestCase1] Cart cleaning... 
+2022-11-07 17:52:11,959 INFO  [TestCase2] Step 5-Verify that correct product has been added correctly to cart 
+2022-11-07 17:52:12,512 INFO  [TestCase2] PASSED - Product name is matching 
+2022-11-07 17:52:12,551 INFO  [TestCase2] PASSED - Product name is matching 
+2022-11-07 17:52:12,630 INFO  [TestCase2] PASSED - quantity of product is 1 
+2022-11-07 17:52:12,644 INFO  [TestCase2] PASSED - quantity of product is 1 
+2022-11-07 17:52:12,685 INFO  [TestCase2] PASSED - Merchant name different 
+2022-11-07 17:52:12,685 INFO  [TestCase2] Cart cleaning... 
+2022-11-07 17:52:12,866 INFO  [TestCase1] Cart has been cleaned successfully! 
+2022-11-07 17:52:12,871 INFO  [ListenerClass] TEST that named <- first_test -> EXECUTED SUCCESSFULLY! 
+2022-11-07 17:52:13,720 INFO  [TestCase2] Cart has been cleaned successfully! 
+2022-11-07 17:52:13,721 INFO  [ListenerClass] TEST that named <- second_test -> EXECUTED SUCCESSFULLY! 
+2022-11-07 17:52:14,390 INFO  [ListenerClass] FINISHED... 
