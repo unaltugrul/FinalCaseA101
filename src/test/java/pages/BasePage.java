@@ -20,11 +20,11 @@ public class BasePage {
 
     //"giris yap" button from main modul for dropdown menu
     @FindBy(id = "myAccount")
-    public WebElement girisYapDropdown;
+    public WebElement loginDropdown;
 
     //"giris yap" button from dropdown menu
     @FindBy(id="login")
-    public WebElement girisYapOption;
+    public WebElement loginOption;
 
     //search input box
     @FindBy(xpath = "//div[@role='combobox']/input[1]")
@@ -32,11 +32,11 @@ public class BasePage {
 
     //hesabim dropdown menu link after logging in
     @FindBy(xpath = "//a[@title='Hesabım']")
-    public WebElement hesabimDropdown;
+    public WebElement myAccountDropdown;
 
     //sepetim Button
     @FindBy(xpath = "//span[@id='shoppingCart']/..")
-    public WebElement sepetimButton;
+    public WebElement myCartButton;
 
     @FindBy(id = "cartItemCount")
     public WebElement cartItemCount;

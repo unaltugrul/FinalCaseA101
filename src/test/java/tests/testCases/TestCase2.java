@@ -73,7 +73,7 @@ public class TestCase2 extends TestBase {
 
         try {
             if (!basePage.cartItemCount.getText().equals("0")) {
-                basePage.sepetimButton.click();
+                basePage.myCartButton.click();
                 actions.moveToElement(cartPage.deleteAllLine).perform();
                 while (true) {
                     try {
@@ -117,11 +117,11 @@ public class TestCase2 extends TestBase {
         logLog.info2("Step 4-User clicks \"sepete git\" button");
         //if there is no "sepete git button" click to "sepetim"
         try {
-            wait.until(ExpectedConditions.visibilityOf(productPage.sepeteGitButton));
-            productPage.sepeteGitButton.click();
+            wait.until(ExpectedConditions.visibilityOf(productPage.goToCartButton));
+            productPage.goToCartButton.click();
 
         } catch (Exception e) {
-            basePage.sepetimButton.click();
+            basePage.myCartButton.click();
         }
 
         //7-Verify that correct product has been added correctly to cart
