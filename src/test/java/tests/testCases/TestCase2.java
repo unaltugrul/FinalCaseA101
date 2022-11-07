@@ -70,21 +70,27 @@ public class TestCase2 extends TestBase {
         //------------------------------------------------------------------
 
         //Special method---Check if there is any product in cart clean it and continue
-        if (!basePage.cartItemCount.getText().equals("0")) {
-            basePage.sepetimButton.click();
-            actions.moveToElement(cartPage.deleteAllLine).perform();
-            while (true) {
-                try {
-                    if (cartPage.deleteAllLine.isDisplayed()) {
-                        cartPage.deleteAllLine.click();
-                    }
-                } catch (Exception e) {
-                    break;
-                }
 
-                Browser.sleep(1);
+        try {
+            if (!basePage.cartItemCount.getText().equals("0")) {
+                basePage.sepetimButton.click();
+                actions.moveToElement(cartPage.deleteAllLine).perform();
+                while (true) {
+                    try {
+                        if (cartPage.deleteAllLine.isDisplayed()) {
+                            cartPage.deleteAllLine.click();
+                        }
+                    } catch (Exception e) {
+                        break;
+                    }
+
+                    Browser.sleep(1);
+                }
             }
+        }catch (Exception e){
+
         }
+
         ///////////////////////////////////////////////////////////////////////////////
 
         //3-User enters product name to search box and press enter key
